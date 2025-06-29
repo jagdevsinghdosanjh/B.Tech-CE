@@ -1,4 +1,6 @@
-  body {
+/* File: learning-style.css */
+/* This file styles the learning content for better readability and user experience */
+body {
       font-family: "Segoe UI", sans-serif;
       background: #f7f9fc;
       margin: 40px auto;
