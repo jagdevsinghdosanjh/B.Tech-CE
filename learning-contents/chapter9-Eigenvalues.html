@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 9: Eigenvalues & Eigenvectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
+
+\[', '\\]
+
+']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="./chapter8-SystemOfEquations.html">← Chapter 8</a></li>
+        <li><a href="./chapter10-Diagonalization.html">Chapter 10 →</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="chapter-container">
+    <aside class="sidebar">
+      <p>Progress Tracker</p>
+      <ul>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#eigenvalues">Finding Eigenvalues</a></li>
+        <li><a href="#eigenvectors">Eigenvectors</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#practice">Practice</a></li>
+      </ul>
+    </aside>
+
+    <main class="chapter-content">
+      <h1 id="definition">📘 Chapter 9: Eigenvalues & Eigenvectors</h1>
+
+      <h2>🔍 Definition</h2>
+      <p>An <strong>eigenvalue</strong> \( \lambda \) and non-zero vector \( \vec{v} \) satisfy:
+        
+
+\[
+        A \vec{v} = \lambda \vec{v}
+        \]
+
+
+        This means \( \vec{v} \) is scaled (not rotated) by the transformation \( A \).
+      </p>
+
+      <h2 id="eigenvalues">🧮 Finding Eigenvalues</h2>
+      <p>To find eigenvalues, solve the characteristic equation:
+        
+
+\[
+        \det(A - \lambda I) = 0
+        \]
+
+
+        The roots \( \lambda \) are the eigenvalues.
+      </p>
+
+      <h2 id="eigenvectors">📐 Finding Eigenvectors</h2>
+      <p>Once an eigenvalue is known, plug it into:
+        
+
+\[
+        (A - \lambda I)\vec{v} = 0
+        \]
+
+
+        Then solve the homogeneous system for \( \vec{v} \).
+      </p>
+
+      <h2 id="example">📊 Example</h2>
+      <p>Let 
+        
+
+\[
+        A = \begin{bmatrix} 4 & 2 \\ 1 & 3 \end{bmatrix}
+        \]
+
+
+        Compute the characteristic polynomial:
+        
+
+\[
+        \det(A - \lambda I) = (4 - \lambda)(3 - \lambda) - 2 = \lambda^2 - 7\lambda + 10
+        \]
+
+
+        So the eigenvalues are \( \lambda = 5 \) and \( \lambda = 2 \). Solve each to find eigenvectors.
+      </p>
+
+      <h2 id="practice">📝 Practice</h2>
+      <p><strong>Q:</strong> Find the eigenvalues and eigenvectors of:
+        
+
+\[
+        B = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}
+        \]
+
+
+        <em>Hint:</em> The eigenvalues are real and distinct.
+      </p>
+
+      <hr />
+      <nav class="chapter-nav">
+        <a href="./chapter8-SystemOfEquations.html">← Back to Chapter 8</a>
+        <a href="./chapter10-Diagonalization.html">Next: Diagonalization →</a>
+      </nav>
+    </main>
+  </div>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 8: Systems of Linear Equations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
+
+\[', '\\]
+
+']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header class="sticky-header">
+  <nav class="navbar">
+    <ul>
+      <li><a href="./chapter7-Determinants.html">← Chapter 7</a></li>
+      <li><a href="./chapter9-Eigenvalues.html">Chapter 9 →</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="chapter-container">
+  <aside class="sidebar">
+    <p>Progress Tracker</p>
+    <ul>
+      <li><a href="#intro">What is a System?</a></li>
+      <li><a href="#methods">Solution Methods</a></li>
+      <li><a href="#types">Types of Solutions</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="#practice">Practice</a></li>
+    </ul>
+  </aside>
+
+  <main class="chapter-content">
+    <h1 id="intro">📘 Chapter 8: Systems of Linear Equations</h1>
+
+    <h2>🔍 What is a System of Equations?</h2>
+    <p>A <strong>system of linear equations</strong> is a set of equations involving the same variables. Example:</p>
+    
+
+\[
+    \begin{aligned}
+    x + y + z &= 6 \\
+    2x - y + 3z &= 14 \\
+    -x + 2y - z &= -2
+    \end{aligned}
+    \]
+
+
+
+    <h2 id="methods">🧠 Methods to Solve</h2>
+    <ul>
+      <li><strong>Substitution & Elimination</strong> (small systems)</li>
+      <li><strong>Matrix Representation:</strong> \( AX = B \)</li>
+      <li><strong>Gaussian Elimination</strong> (Row-echelon form)</li>
+      <li><strong>Gauss–Jordan Elimination</strong> (Reduced row-echelon form)</li>
+      <li><strong>Matrix Inverse Method:</strong> \( X = A^{-1}B \) (if \( A \) is invertible)</li>
+    </ul>
+
+    <h2 id="types">📊 Types of Solutions</h2>
+    <ul>
+      <li><strong>Unique Solution:</strong> Exactly one solution</li>
+      <li><strong>Infinitely Many Solutions:</strong> Depends on free variables</li>
+      <li><strong>No Solution:</strong> Inconsistent system</li>
+    </ul>
+
+    <h2 id="example">📌 Example</h2>
+    <p>Use Gaussian elimination on:
+      
+
+\[
+      \begin{aligned}
+      x + y + z &= 6 \\
+      x + 2y + 3z &= 14 \\
+      2x + y + z &= 10
+      \end{aligned}
+      \]
+
+
+      Convert to augmented matrix and apply row operations to solve.
+    </p>
+
+    <h2 id="practice">📝 Practice</h2>
+    <p><strong>Q:</strong> Solve the following system using any method:
+      
+
+\[
+      \begin{aligned}
+      2x + 3y &= 8 \\
+      4x + 9y &= 20
+      \end{aligned}
+      \]
+
+
+    </p>
+
+    <hr />
+    <nav class="chapter-nav">
+      <a href="./chapter7-Determinants.html">← Back to Chapter 7</a>
+      <a href="./chapter9-Eigenvalues.html">Next: Eigenvalues & Eigenvectors →</a>
+    </nav>
+  </main>
+</div>
+
+<script src="navbar.js"></script>
+</body>
+</html>
