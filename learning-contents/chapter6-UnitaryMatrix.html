@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 6: Unitary Matrix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
+
+\[', '\\]
+
+']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="./chapter5-HermitianMatrices.html">← Chapter 5</a></li>
+        <li><a href="./chapter7-Determinants.html">Chapter 7 →</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="chapter-container">
+    <aside class="sidebar">
+      <p>Progress Tracker</p>
+      <ul>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#practice">Practice</a></li>
+      </ul>
+    </aside>
+
+    <main class="chapter-content">
+      <h1 id="definition">📘 Chapter 6: Unitary Matrix</h1>
+
+      <h2>🔷 Definition</h2>
+      <p>A complex square matrix \( U \) is <strong>unitary</strong> if:
+        
+
+\[
+          U^\dagger U = U U^\dagger = I
+        \]
+
+
+        where \( U^\dagger \) is the conjugate transpose of \( U \).
+      </p>
+      <p>This means that the inverse of a unitary matrix is its conjugate transpose:  
+        \( U^{-1} = U^\dagger \)
+      </p>
+
+      <h2 id="properties">📐 Key Properties</h2>
+      <ul>
+        <li>Preserves length: \( \|Ux\| = \|x\| \) for all vectors \( x \)</li>
+        <li>Eigenvalues lie on the unit circle (magnitude 1)</li>
+        <li>Generalizes orthogonal matrices to complex vector spaces</li>
+      </ul>
+
+      <h2 id="example">📊 Example</h2>
+      <p>Let
+        
+
+\[
+          U = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & i \\ i & 1 \end{bmatrix}
+        \]
+
+
+        Then
+        
+
+\[
+          U^\dagger = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & -i \\ -i & 1 \end{bmatrix}
+        \]
+
+
+        and you can verify that:
+        
+
+\[
+          U^\dagger U = I
+        \]
+
+
+      </p>
+
+      <h2 id="practice">📝 Practice</h2>
+      <p><strong>Q:</strong> Prove that the following matrix is unitary:
+        
+
+\[
+          Q = \begin{bmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{bmatrix}
+        \]
+
+
+        where \( \theta \in \mathbb{R} \)
+      </p>
+
+      <hr />
+      <nav class="chapter-nav">
+        <a href="./chapter5-HermitianMatrices.html">← Back to Chapter 5</a>
+        <a href="./chapter7-Determinants.html">Next: Determinants →</a>
+      </nav>
+    </main>
+  </div>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

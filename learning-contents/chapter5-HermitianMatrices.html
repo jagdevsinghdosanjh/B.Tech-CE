@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 5: Hermitian & Skew-Hermitian Matrices</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
+
+\[', '\\]
+
+']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="./chapter4-SymmetricMatrices.html">← Chapter 4</a></li>
+        <li><a href="./chapter6-UnitaryMatrix.html">Chapter 6 →</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="chapter-container">
+    <aside class="sidebar">
+      <p>Progress Tracker</p>
+      <ul>
+        <li><a href="#hermitian">Hermitian Matrices</a></li>
+        <li><a href="#skew">Skew-Hermitian Matrices</a></li>
+        <li><a href="#comparison">Comparison</a></li>
+        <li><a href="#example">Examples</a></li>
+        <li><a href="#practice">Practice</a></li>
+      </ul>
+    </aside>
+
+    <main class="chapter-content">
+      <h1 id="hermitian">📘 Chapter 5: Hermitian & Skew-Hermitian Matrices</h1>
+
+      <h2>🔍 Hermitian Matrix</h2>
+      <p>A complex square matrix \( A \) is <strong>Hermitian</strong> if:
+        
+
+\[
+          A^\dagger = A
+        \]
+
+
+        where \( A^\dagger \) is the conjugate transpose of \( A \).
+      </p>
+      <p>This means \( A_{ij} = \overline{A_{ji}} \).</p>
+
+      <h2 id="skew">↔️ Skew-Hermitian Matrix</h2>
+      <p>A complex square matrix \( A \) is <strong>Skew-Hermitian</strong> if:
+        
+
+\[
+          A^\dagger = -A
+        \]
+
+
+        So \( A_{ij} = -\overline{A_{ji}} \) and all diagonal entries are purely imaginary or zero.
+      </p>
+
+      <h2 id="comparison">📊 Comparison</h2>
+      <table>
+        <thead>
+          <tr><th>Property</th><th>Hermitian</th><th>Skew-Hermitian</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Transpose Rule</td><td>\( A^\dagger = A \)</td><td>\( A^\dagger = -A \)</td></tr>
+          <tr><td>Diagonal Entries</td><td>Real</td><td>Pure Imaginary or Zero</td></tr>
+          <tr><td>Eigenvalues</td><td>Real</td><td>Imaginary</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="example">📌 Examples</h2>
+      <p><strong>Hermitian:</strong>
+        
+
+\[
+          A = \begin{bmatrix} 3 & 2+i \\ 2-i & 1 \end{bmatrix}
+        \quad \Rightarrow \quad A^\dagger = A
+        \]
+
+
+      </p>
+      <p><strong>Skew-Hermitian:</strong>
+        
+
+\[
+          B = \begin{bmatrix} 0 & i \\ -i & 0 \end{bmatrix}
+        \quad \Rightarrow \quad B^\dagger = -B
+        \]
+
+
+      </p>
+
+      <h2 id="practice">📝 Practice</h2>
+      <p><strong>Q:</strong> Verify whether the matrix
+        
+
+\[
+          C = \begin{bmatrix} 0 & 2+i \\ -2+i & 0 \end{bmatrix}
+        \]
+
+
+        is Hermitian, Skew-Hermitian, or neither.
+      </p>
+
+      <hr />
+      <nav class="chapter-nav">
+        <a href="./chapter4-SymmetricMatrices.html">← Back to Chapter 4</a>
+        <a href="./chapter6-UnitaryMatrix.html">Next: Unitary Matrix →</a>
+      </nav>
+    </main>
+  </div>
+
+  <script src="navbar.js"></script>
+</body>
+</html>
