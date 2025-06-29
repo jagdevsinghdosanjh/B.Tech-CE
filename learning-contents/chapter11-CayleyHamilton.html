@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 11: Cayley–Hamilton Theorem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
+
+\[', '\\]
+
+']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header class="sticky-header">
+  <nav class="navbar">
+    <ul>
+      <li><a href="./chapter10-Diagonalization.html">← Chapter 10</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="chapter-container">
+  <aside class="sidebar">
+    <p>Progress Tracker</p>
+    <ul>
+      <li><a href="#statement">Theorem Statement</a></li>
+      <li><a href="#proof">Proof Sketch</a></li>
+      <li><a href="#application">Applications</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="#practice">Practice</a></li>
+    </ul>
+  </aside>
+
+  <main class="chapter-content">
+    <h1 id="statement">📘 Chapter 11: Cayley–Hamilton Theorem</h1>
+
+    <h2>🔢 Theorem Statement</h2>
+    <p>Every square matrix satisfies its own characteristic polynomial.</p>
+    <p>If 
+      
+
+\[
+      p(\lambda) = \det(A - \lambda I)
+      \]
+
+
+      then
+      
+
+\[
+      p(A) = 0
+      \]
+
+
+      where the scalar variable \( \lambda \) is replaced by the matrix \( A \).
+    </p>
+
+    <h2 id="proof">🧠 Proof Sketch</h2>
+    <ul>
+      <li>Start with the characteristic polynomial: \( p(\lambda) = \lambda^n + a_1 \lambda^{n-1} + \cdots + a_n \)</li>
+      <li>Use Jordan form or adjugate techniques to show that \( p(A) = 0 \)</li>
+    </ul>
+    <p>This shows that plugging matrix \( A \) into its own polynomial yields the zero matrix.</p>
+
+    <h2 id="application">🚀 Applications</h2>
+    <ul>
+      <li>Simplifying powers of matrices (e.g. \( A^5 \))</li>
+      <li>Efficiently finding inverse when matrix is nonsingular</li>
+      <li>Used in control systems and theoretical algebra</li>
+    </ul>
+
+    <h2 id="example">📊 Example</h2>
+    <p>Let
+      
+
+\[
+      A = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix}
+      \]
+
+
+      Then:
+      
+
+\[
+      p(\lambda) = (\lambda - 2)(\lambda - 3) = \lambda^2 - 5\lambda + 6
+      \]
+
+
+      Apply polynomial to matrix:
+      
+
+\[
+      p(A) = A^2 - 5A + 6I = 0
+      \]
+
+
+    </p>
+
+    <h2 id="practice">📝 Practice</h2>
+    <p><strong>Q:</strong> Verify that
+      
+
+\[
+      B = \begin{bmatrix} 4 & 1 \\ -2 & 1 \end{bmatrix}
+      \]
+
+
+      satisfies its own characteristic equation.
+    </p>
+
+    <hr />
+    <nav class="chapter-nav">
+      <a href="./chapter10-Diagonalization.html">← Back to Chapter 10</a>
+      <a href="#">🏁 Finish</a>
+    </nav>
+  </main>
+</div>
+
+<script src="navbar.js"></script>
+</body>
+</html>
