@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 3: Rank–Nullity Theorem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
+
+\[', '\\]
+
+']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="./chapter2-InverseAndRank.html">← Chapter 2</a></li>
+        <li><a href="./chapter4-SymmetricMatrices.html">Chapter 4 →</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="chapter-container">
+    <aside class="sidebar">
+      <p>Progress Tracker</p>
+      <ul>
+        <li><a href="#concept">Theorem Statement</a></li>
+        <li><a href="#proof">Sketch of Proof</a></li>
+        <li><a href="#application">Applications</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#practice">Practice</a></li>
+      </ul>
+    </aside>
+
+    <main class="chapter-content">
+      <h1 id="concept">📘 Chapter 3: Rank–Nullity Theorem</h1>
+
+      <h2>📖 Theorem Statement</h2>
+      <p>
+        Let \( T: V \rightarrow W \) be a linear transformation between finite-dimensional vector spaces. Then:
+      </p>
+      
+
+\[
+        \dim(\ker(T)) + \dim(\text{Im}(T)) = \dim(V)
+      \]
+
+
+      <p>This is known as the <strong>Rank–Nullity Theorem</strong>, where:</p>
+      <ul>
+        <li>\( \dim(\ker(T)) \) = Nullity of \( T \)</li>
+        <li>\( \dim(\text{Im}(T)) \) = Rank of \( T \)</li>
+      </ul>
+
+      <h2 id="proof">🧠 Sketch of the Proof</h2>
+      <p>The theorem relies on choosing a basis for the kernel and extending it to a basis for the domain space. Applying \( T \) to the extended basis yields a basis for the image.</p>
+
+      <h2 id="application">🚀 Applications</h2>
+      <ul>
+        <li>Determining if a matrix has a full-rank transformation</li>
+        <li>Analyzing solutions to systems of equations</li>
+        <li>Understanding dimensions of solution spaces</li>
+      </ul>
+
+      <h2 id="example">📊 Example</h2>
+      <p>Let \( A = \begin{bmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \end{bmatrix} \)  
+      - Domain dimension = 3 (number of columns)  
+      - Row reduce to find Rank = 2  
+      - So Nullity = \( 3 - 2 = 1 \)</p>
+
+      
+
+\[
+        \text{Rank}(A) + \text{Nullity}(A) = 2 + 1 = 3 = \text{dimension of domain}
+      \]
+
+
+
+      <h2 id="practice">📝 Practice</h2>
+      <p><strong>Q:</strong> A \( 4 \times 5 \) matrix has rank 3. What is its nullity?</p>
+      <p><strong>Answer:</strong> Nullity = \( 5 - 3 = 2 \)</p>
+
+      <hr />
+      <nav class="chapter-nav">
+        <a href="./chapter2-InverseAndRank.html">← Back to Chapter 2</a>
+        <a href="./chapter4-SymmetricMatrices.html">Next: Symmetric & Orthogonal →</a>
+      </nav>
+    </main>
+  </div>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

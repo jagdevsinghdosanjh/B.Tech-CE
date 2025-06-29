@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.chapter-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  min-width: 200px;
+  background: #ecf0f1;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #2c3e50;
+  display: block;
+  padding: 4px 0;
+}
+
+.chapter-content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.chapter-nav {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chapter-nav a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tip {
+  background-color: #f9f9a9;
+  padding: 1rem;
+  border-left: 4px solid #f1c40f;
+  margin: 1.5rem 0;
+}
+
+/* Make MathJax responsive */
+.chapter-content mjx-container {
+  overflow-x: auto;
+  display: block;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .chapter-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 2;
+    border-right: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+}

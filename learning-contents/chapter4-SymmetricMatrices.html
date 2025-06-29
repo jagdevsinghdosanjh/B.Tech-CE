@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 4: Symmetric, Skew-Symmetric & Orthogonal Matrices</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
+
+\[', '\\]
+
+']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="./chapter3-RankNullity.html">← Chapter 3</a></li>
+        <li><a href="./chapter5-HermitianMatrices.html">Chapter 5 →</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="chapter-container">
+    <aside class="sidebar">
+      <p>Progress Tracker</p>
+      <ul>
+        <li><a href="#symmetric">Symmetric Matrices</a></li>
+        <li><a href="#skew">Skew-Symmetric</a></li>
+        <li><a href="#orthogonal">Orthogonal Matrices</a></li>
+        <li><a href="#example">Examples</a></li>
+        <li><a href="#practice">Practice</a></li>
+      </ul>
+    </aside>
+
+    <main class="chapter-content">
+      <h1 id="symmetric">📘 Chapter 4: Symmetric, Skew-Symmetric & Orthogonal Matrices</h1>
+
+      <h2>🔁 Symmetric Matrix</h2>
+      <p>A matrix \( A \) is <strong>symmetric</strong> if:
+        
+
+\[
+          A^T = A
+        \]
+
+
+      </p>
+      <p>This means the matrix is equal to its own transpose.</p>
+
+      <h2 id="skew">↔️ Skew-Symmetric Matrix</h2>
+      <p>A matrix \( A \) is <strong>skew-symmetric</strong> if:
+        
+
+\[
+          A^T = -A
+        \]
+
+
+      </p>
+      <p>Also, diagonal elements of a skew-symmetric matrix are always zero.</p>
+
+      <h2 id="orthogonal">📐 Orthogonal Matrix</h2>
+      <p>A square matrix \( Q \) is <strong>orthogonal</strong> if:
+        
+
+\[
+          Q^T Q = Q Q^T = I
+        \]
+
+
+      </p>
+      <p>Orthogonal matrices preserve length and angles—essential in 3D geometry and computer graphics.</p>
+
+      <h2 id="example">📊 Examples</h2>
+      <p><strong>Symmetric:</strong>
+        
+
+\[
+          A = \begin{bmatrix} 2 & 3 \\ 3 & 5 \end{bmatrix}, \quad A^T = A
+        \]
+
+
+      </p>
+      <p><strong>Skew-Symmetric:</strong>
+        
+
+\[
+          B = \begin{bmatrix} 0 & -4 \\ 4 & 0 \end{bmatrix}, \quad B^T = -B
+        \]
+
+
+      </p>
+      <p><strong>Orthogonal:</strong>
+        
+
+\[
+          Q = \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix}, \quad Q^T Q = I
+        \]
+
+
+      </p>
+
+      <h2 id="practice">📝 Practice</h2>
+      <p><strong>Q:</strong> Let
+        
+
+\[
+          M = \begin{bmatrix} 1 & 0 & 2 \\ 0 & 3 & 0 \\ 2 & 0 & 1 \end{bmatrix}
+        \]
+
+
+        Is \( M \) symmetric?
+      </p>
+      <p><strong>Hint:</strong> Check whether \( M^T = M \)</p>
+
+      <hr />
+      <nav class="chapter-nav">
+        <a href="./chapter3-RankNullity.html">← Back to Chapter 3</a>
+        <a href="./chapter5-HermitianMatrices.html">Next: Hermitian & Skew-Hermitian →</a>
+      </nav>
+    </main>
+  </div>
+
+  <script src="navbar.js"></script>
+</body>
+</html>
