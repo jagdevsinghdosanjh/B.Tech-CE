@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 10: Diagonalization of Matrices</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\
+
+\[', '\\]
+
+']]
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header class="sticky-header">
+  <nav class="navbar">
+    <ul>
+      <li><a href="./chapter9-Eigenvalues.html">← Chapter 9</a></li>
+      <li><a href="./chapter11-CayleyHamilton.html">Chapter 11 →</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="chapter-container">
+  <aside class="sidebar">
+    <p>Progress Tracker</p>
+    <ul>
+      <li><a href="#concept">Concept</a></li>
+      <li><a href="#conditions">Conditions</a></li>
+      <li><a href="#procedure">Steps to Diagonalize</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="#practice">Practice</a></li>
+    </ul>
+  </aside>
+
+  <main class="chapter-content">
+    <h1 id="concept">📘 Chapter 10: Diagonalization of Matrices</h1>
+
+    <h2>🔎 What is Diagonalization?</h2>
+    <p>A matrix \( A \) is <strong>diagonalizable</strong> if there exists an invertible matrix \( P \) such that:
+      
+
+\[
+      P^{-1} A P = D
+      \]
+
+
+      where \( D \) is a diagonal matrix consisting of eigenvalues of \( A \), and the columns of \( P \) are eigenvectors of \( A \).
+    </p>
+
+    <h2 id="conditions">📐 When is a Matrix Diagonalizable?</h2>
+    <ul>
+      <li>If \( A \) has \( n \) <em>linearly independent</em> eigenvectors, then it is diagonalizable.</li>
+      <li>Equivalently: Algebraic multiplicity = geometric multiplicity for each eigenvalue.</li>
+    </ul>
+
+    <h2 id="procedure">⚙️ How to Diagonalize</h2>
+    <ol>
+      <li>Find eigenvalues of \( A \)</li>
+      <li>Find a basis of eigenvectors for each eigenvalue</li>
+      <li>Form \( P = [\vec{v}_1 \ \vec{v}_2 \ \cdots \vec{v}_n] \)</li>
+      <li>Construct \( D \) with corresponding eigenvalues on the diagonal</li>
+      <li>Then \( P^{-1} A P = D \)</li>
+    </ol>
+
+    <h2 id="example">📊 Example</h2>
+    <p>Let 
+      
+
+\[
+      A = \begin{bmatrix} 5 & 4 \\ 1 & 2 \end{bmatrix}
+      \]
+
+
+      - Step 1: Solve \( \det(A - \lambda I) = 0 \)  
+      - Step 2: Find eigenvectors  
+      - Step 3: Construct \( P \) and \( D \), verify \( P^{-1} A P = D \)
+    </p>
+
+    <h2 id="practice">📝 Practice</h2>
+    <p><strong>Q:</strong> Diagonalize the matrix (if possible):
+      
+
+\[
+      A = \begin{bmatrix} 3 & 0 & 0 \\ 0 & 2 & 1 \\ 0 & 0 & 2 \end{bmatrix}
+      \]
+
+
+    </p>
+
+    <hr />
+    <nav class="chapter-nav">
+      <a href="./chapter9-Eigenvalues.html">← Back to Chapter 9</a>
+      <a href="./chapter11-CayleyHamilton.html">Next: Cayley–Hamilton Theorem →</a>
+    </nav>
+  </main>
+</div>
+
+<script src="navbar.js"></script>
+</body>
+</html>
