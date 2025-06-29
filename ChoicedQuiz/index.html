@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Portal - For B.Tech CE Mathematics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Load MathJax -->
+<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quiz Portal For B.Tech CE Mathematics</h1>
+
+        <label for="studentName"><strong>Student Name:</strong></label>
+        <input type="text" id="studentName" placeholder="Enter your name" /><br><br>
+
+        <label for="versionSelect"><strong>Section A:</strong></label>
+        <select id="versionSelect">
+            <option value="1">Introduction to Matrices</option>
+            <option value="2">Inverse and Rank of Matrix</option>
+            <option value="3">Rank Nullity Theorem</option>
+            <option value="4">Symmetric, Skew Symmetric and Orthogonal Matrices</option>
+            <option value="5">Hermitian and Skew-Hermetian Matrices</option>
+            <option value="6">Unitry Matrix</option>
+            <option value="7">Determinants</option>
+            <option value="8">System of Linear Equations</option>
+            <option value="9">Eigen Values and Eigen Vectors</option>
+            <option value="10">Diagonlaization of Matrices</option>
+            <option value="11">Cayley Hamiltonian Theorem</option>
+            <option value="12">Chapter 12 - Statistics</option>
+            <option value="13">Chapters 1 to 6</option>
+            <option value="14">Chapters 7 to 12</option>
+            <option value="15">Chapters 1 to 12</option>
+            <option value="16">Matrices Quiz 0</option>
+            <option value="17">Matrices Quiz 1</option>
+            <option value="18">Matrices Quiz 2</option>   
+        </select>
+        <button onclick="loadQuiz()">Load Quiz</button>
+
+        <div id="quiz"></div>
+        <button onclick="submitQuiz()">Submit Answers</button>
+        <button id="downloadBtn" disabled>Download PDF</button>
+        <button onclick="retakeQuiz()">Retake Quiz</button>
+        <div id="result"></div>
+        <div id="explanation"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

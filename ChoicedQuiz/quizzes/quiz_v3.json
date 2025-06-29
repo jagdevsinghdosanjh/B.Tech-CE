@@ -1,0 +1,202 @@
+[
+ {
+      "question": "What does the Rank-Nullity Theorem state?",
+      "options": [
+        "Rank + Nullity = Number of rows",
+        "Rank + Nullity = Number of columns",
+        "Rank + Nullity = Dimension of the vector space",
+        "Rank + Nullity = Determinant of the matrix"
+      ],
+      "answer": [2],
+      "explanation": "The Rank-Nullity Theorem states that the rank of a matrix plus the nullity equals the dimension of the vector space.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the rank of a matrix?",
+      "options": [
+        "The number of rows in the matrix",
+        "The number of columns in the matrix",
+        "The maximum number of linearly independent rows or columns",
+        "The determinant of the matrix"
+      ],
+      "answer": [2],
+      "explanation": "The rank of a matrix is the maximum number of linearly independent rows or columns.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the nullity of a matrix?",
+      "options": [
+        "The number of rows in the matrix",
+        "The number of columns in the matrix",
+        "The dimension of the null space",
+        "The determinant of the matrix"
+      ],
+      "answer": [2],
+      "explanation": "The nullity of a matrix is the dimension of its null space, which consists of all solutions to Ax = 0.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has rank 3 and nullity 2, what is the dimension of the vector space?",
+      "options": ["3", "5", "6", "2"],
+      "answer": [1],
+      "explanation": "According to the Rank-Nullity Theorem, Rank + Nullity = Dimension. Here, 3 + 2 = 5.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the null space of a matrix?",
+      "options": [
+        "The set of all solutions to Ax = 0",
+        "The set of all solutions to Ax = b",
+        "The set of all eigenvectors of A",
+        "The set of all eigenvalues of A"
+      ],
+      "answer": [0],
+      "explanation": "The null space of a matrix is the set of all vectors x such that Ax = 0.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has full rank, what is its nullity?",
+      "options": ["0", "1", "Equal to the number of rows", "Equal to the number of columns"],
+      "answer": [0],
+      "explanation": "A matrix with full rank has no null space, so its nullity is 0.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the rank-nullity equation for a matrix A of size m × n?",
+      "options": [
+        "Rank(A) + Nullity(A) = m",
+        "Rank(A) + Nullity(A) = n",
+        "Rank(A) + Nullity(A) = m × n",
+        "Rank(A) + Nullity(A) = det(A)"
+      ],
+      "answer": [1],
+      "explanation": "For a matrix A of size m × n, Rank(A) + Nullity(A) = n, where n is the number of columns.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has rank 4 and 6 columns, what is its nullity?",
+      "options": ["2", "4", "6", "10"],
+      "answer": [0],
+      "explanation": "Using the Rank-Nullity Theorem: Rank + Nullity = Number of columns. Here, 4 + Nullity = 6, so Nullity = 2.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What does the nullity of a matrix represent geometrically?",
+      "options": [
+        "The number of linearly independent rows",
+        "The number of linearly independent columns",
+        "The dimension of the solution space to Ax = 0",
+        "The determinant of the matrix"
+      ],
+      "answer": [2],
+      "explanation": "The nullity represents the dimension of the solution space to Ax = 0, which is the null space.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has rank 0, what is its nullity?",
+      "options": [
+        "Equal to the number of rows",
+        "Equal to the number of columns",
+        "0",
+        "Undefined"
+      ],
+      "answer": [1],
+      "explanation": "If a matrix has rank 0, all columns are dependent, and the nullity equals the number of columns.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the relationship between rank and nullity for a square matrix?",
+      "options": [
+        "Rank + Nullity = Number of rows",
+        "Rank + Nullity = Number of columns",
+        "Rank + Nullity = Dimension of the matrix",
+        "Rank + Nullity = Trace of the matrix"
+      ],
+      "answer": [2],
+      "explanation": "For a square matrix, Rank + Nullity equals the dimension of the matrix, which is the number of rows or columns.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has rank 5 and nullity 0, what can we say about the matrix?",
+      "options": [
+        "It is singular",
+        "It is invertible",
+        "It has no null space",
+        "It has full rank"
+      ],
+      "answer": [3],
+      "explanation": "A matrix with nullity 0 has full rank, meaning all columns are linearly independent.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the nullity of the identity matrix?",
+      "options": ["0", "1", "Equal to the number of rows", "Equal to the number of columns"],
+      "answer": [0],
+      "explanation": "The identity matrix has full rank, so its nullity is 0.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the rank of the zero matrix?",
+      "options": ["0", "1", "Equal to the number of rows", "Equal to the number of columns"],
+      "answer": [0],
+      "explanation": "The zero matrix has no linearly independent rows or columns, so its rank is 0.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has rank 3 and nullity 2, what is the size of the matrix?",
+      "options": [
+        "3 × 2",
+        "5 × 3",
+        "3 × 5",
+        "5 × 5"
+      ],
+      "answer": [2],
+      "explanation": "Rank + Nullity = Number of columns. Here, Rank = 3 and Nullity = 2, so the matrix has 5 columns and 3 rows.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has rank 2 and nullity 3, how many columns does the matrix have?",
+      "options": ["2", "3", "5", "6"],
+      "answer": [2],
+      "explanation": "Using the Rank-Nullity Theorem: Rank + Nullity = Number of columns. Here, 2 + 3 = 5 columns.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the nullity of a matrix with rank equal to the number of columns?",
+      "options": ["0", "1", "Equal to the number of rows", "Undefined"],
+      "answer": [0],
+      "explanation": "If the rank equals the number of columns, the matrix has full rank, and its nullity is 0.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has rank 4 and nullity 1, what is the dimension of its null space?",
+      "options": ["1", "4", "5", "0"],
+      "answer": [0],
+      "explanation": "The nullity of a matrix is the dimension of its null space. Here, the nullity is 1, so the null space has dimension 1.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What does the rank of a matrix represent geometrically?",
+      "options": [
+        "The number of linearly independent rows or columns",
+        "The dimension of the null space",
+        "The determinant of the matrix",
+        "The trace of the matrix"
+      ],
+      "answer": [0],
+      "explanation": "The rank represents the number of linearly independent rows or columns in the matrix.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If a matrix has rank 0, what can we say about its null space?",
+      "options": [
+        "It is empty",
+        "It has dimension equal to the number of columns",
+        "It has dimension equal to the number of rows",
+        "It is undefined"
+      ],
+      "answer": [1],
+      "explanation": "If a matrix has rank 0, all columns are dependent, and the null space has dimension equal to the number of columns.",
+      "type": "singleSelect"
+    }
+]

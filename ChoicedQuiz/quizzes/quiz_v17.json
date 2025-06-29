@@ -1,0 +1,112 @@
+[
+    {
+      "question": "What is the rank of a matrix?",
+      "options": [
+        "The number of rows in the matrix",
+        "The number of columns in the matrix",
+        "The maximum number of linearly independent rows or columns",
+        "The determinant of the matrix"
+      ],
+      "answer": [2],
+      "explanation": "The rank of a matrix is defined as the maximum number of linearly independent rows or columns in the matrix. It represents the dimension of the column space or row space.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following matrices is symmetric?",
+      "options": [
+        "\\( \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 1 & 2 \\\\ 2 & 1 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 1 & 0 \\\\ 0 & -1 \\end{bmatrix} \\)"
+      ],
+      "answer": [1],
+      "explanation": "A symmetric matrix is one where \\( A = A^T \\).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the determinant of the matrix \\( \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\)?",
+      "options": ["\\( -2 \\)", "\\( 2 \\)", "\\( 10 \\)", "\\( -10 \\)"],
+      "answer": [0],
+      "explanation": "For a 2x2 matrix \\( \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} \\), the determinant is \\( ad - bc \\).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What does the Cayley-Hamilton theorem state?",
+      "options": [
+        "Every matrix satisfies its own characteristic equation.",
+        "The determinant of a matrix is equal to its trace.",
+        "The rank of a matrix is equal to the number of eigenvalues.",
+        "The inverse of a matrix is equal to its adjoint divided by its determinant."
+      ],
+      "answer": [0],
+      "explanation": "It states that every square matrix satisfies its own characteristic equation.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is an eigenvalue of a matrix?",
+      "options": [
+        "A scalar that satisfies \\( Ax = \\lambda x \\) for a non-zero vector \\( x \\)",
+        "A scalar that satisfies \\( A^T x = \\lambda x \\)",
+        "The determinant of the matrix",
+        "The trace of the matrix"
+      ],
+      "answer": [0],
+      "explanation": "Eigenvalues are scalars for which \\( Ax = \\lambda x \\) holds true for some non-zero vector \\( x \\).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following matrices is orthogonal?",
+      "options": [
+        "\\( \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 0 & 1 \\\\ -1 & 0 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 2 & 0 \\\\ 0 & 2 \\end{bmatrix} \\)"
+      ],
+      "answer": [1],
+      "explanation": "Orthogonal matrices satisfy \\( A^T A = I \\); they preserve vector lengths and angles.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the trace of the matrix \\( \\begin{bmatrix} 5 & 2 \\\\ 3 & 7 \\end{bmatrix} \\)?",
+      "options": ["12", "10", "15", "5"],
+      "answer": [0],
+      "explanation": "The trace is the sum of the diagonal elements: \\( 5 + 7 = 12 \\).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the inverse of the matrix \\( \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\)?",
+      "options": [
+        "\\( \\begin{bmatrix} -2 & 1 \\\\ 1.5 & -0.5 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 2 & -1 \\\\ -1.5 & 0.5 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} -0.5 & 1.5 \\\\ 1 & -2 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 0.5 & -1.5 \\\\ -1 & 2 \\end{bmatrix} \\)"
+      ],
+      "answer": [0],
+      "explanation": "Inverse is computed as \\( A^{-1} = \\frac{1}{\\text{det}(A)} \\cdot \\text{adj}(A) \\).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is a Hermitian matrix?",
+      "options": [
+        "A matrix that is equal to its transpose",
+        "A matrix that is equal to its conjugate transpose",
+        "A matrix with all positive eigenvalues",
+        "A matrix with all negative eigenvalues"
+      ],
+      "answer": [1],
+      "explanation": "Hermitian matrices satisfy \\( A = A^H \\), where \\( A^H \\) is the conjugate transpose.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the eigenvector corresponding to the eigenvalue \\( \\lambda = 2 \\) for the matrix \\( \\begin{bmatrix} 2 & 0 \\\\ 0 & 3 \\end{bmatrix} \\)?",
+      "options": [
+        "\\( \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} \\)",
+        "\\( \\begin{bmatrix} 0 \\\\ 0 \\end{bmatrix} \\)"
+      ],
+      "answer": [0],
+      "explanation": "Plugging \\( \\lambda = 2 \\) into \\( Ax = \\lambda x \\) yields \\( \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix} \\) as eigenvector.",
+      "type": "singleSelect"
+    }
+  ]

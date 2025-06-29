@@ -1,0 +1,232 @@
+[
+  {
+      "question": "What is a symmetric matrix?",
+      "options": [
+        "A matrix where Aᵗ = A",
+        "A matrix where Aᵗ = -A",
+        "A matrix where Aᵗ ≠ A",
+        "A matrix where Aᵗ = I"
+      ],
+      "correct": [0],
+      "explanation": "A symmetric matrix is one where the transpose equals the original matrix (Aᵗ = A).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is a skew-symmetric matrix?",
+      "options": [
+        "A matrix where Aᵗ = A",
+        "A matrix where Aᵗ = -A",
+        "A matrix where Aᵗ ≠ A",
+        "A matrix where Aᵗ = I"
+      ],
+      "correct": [1],
+      "explanation": "A skew-symmetric matrix satisfies Aᵗ = -A, which forces diagonal elements to be zero.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is an orthogonal matrix?",
+      "options": [
+        "A matrix where AᵗA = I",
+        "A matrix where Aᵗ = A",
+        "A matrix where Aᵗ = -A",
+        "A matrix where Aᵗ ≠ A"
+      ],
+      "correct": [0],
+      "explanation": "Orthogonal matrices have the property AᵗA = I, meaning the transpose equals the inverse.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following is true for a skew-symmetric matrix?",
+      "options": [
+        "All diagonal elements are zero",
+        "All diagonal elements are one",
+        "All diagonal elements are negative",
+        "All diagonal elements are positive"
+      ],
+      "correct": [0],
+      "explanation": "Skew-symmetric matrices always have zeroes on the main diagonal.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If A is symmetric, what can be said about Aᵗ?",
+      "options": ["Aᵗ = A", "Aᵗ = -A", "Aᵗ ≠ A", "Aᵗ = I"],
+      "correct": [0],
+      "explanation": "A symmetric matrix is equal to its transpose: Aᵗ = A.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If A is orthogonal, what is A⁻¹?",
+      "options": [
+        "A⁻¹ = A",
+        "A⁻¹ = Aᵗ",
+        "A⁻¹ = -A",
+        "A⁻¹ ≠ A"
+      ],
+      "correct": [1],
+      "explanation": "For orthogonal matrices, A⁻¹ = Aᵗ.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following matrices is symmetric?",
+      "options": [
+        "Matrix: [[1, 2], [2, 3]]",
+        "Matrix: [[1, -2], [2, 3]]",
+        "Matrix: [[1, 2], [-2, 3]]",
+        "Matrix: [[1, 0], [0, -1]]"
+      ],
+      "correct": [0],
+      "explanation": "A matrix is symmetric if its transpose equals itself. [[1, 2], [2, 3]] meets this criterion.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following matrices is skew-symmetric?",
+      "options": [
+        "Matrix: [[0, 2], [-2, 0]]",
+        "Matrix: [[1, 2], [2, 3]]",
+        "Matrix: [[1, -2], [2, 3]]",
+        "Matrix: [[1, 0], [0, -1]]"
+      ],
+      "correct": [0],
+      "explanation": "Skew-symmetric matrices satisfy Aᵗ = -A. [[0, 2], [-2, 0]] is a classic example.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the determinant of an orthogonal matrix?",
+      "options": ["±1", "0", "1", "-1"],
+      "correct": [0],
+      "explanation": "Orthogonal matrices always have determinants of ±1.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following is true for a symmetric matrix?",
+      "options": [
+        "It is always invertible",
+        "It is always diagonalizable",
+        "It is always orthogonal",
+        "It is always singular"
+      ],
+      "correct": [1],
+      "explanation": "Symmetric matrices are always diagonalizable by an orthogonal basis.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following matrices is orthogonal?",
+      "options": [
+        "Matrix: [[1, 0], [0, 1]]",
+        "Matrix: [[1, 2], [2, 3]]",
+        "Matrix: [[0, 1], [-1, 0]]",
+        "Matrix: [[1, -2], [2, 3]]"
+      ],
+      "correct": [0],
+      "explanation": "The identity matrix is trivially orthogonal since IᵗI = I.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the trace of a skew-symmetric matrix?",
+      "options": [
+        "Always zero",
+        "Always positive",
+        "Always negative",
+        "Undefined"
+      ],
+      "correct": [0],
+      "explanation": "All diagonal entries of a skew-symmetric matrix are zero, making the trace zero.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If A is symmetric, what can be said about its eigenvalues?",
+      "options": [
+        "All eigenvalues are real",
+        "All eigenvalues are imaginary",
+        "All eigenvalues are zero",
+        "All eigenvalues are positive"
+      ],
+      "correct": [0],
+      "explanation": "Symmetric matrices always have real eigenvalues.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following is true for an orthogonal matrix?",
+      "options": [
+        "Its rows and columns are orthonormal",
+        "Its determinant is always zero",
+        "Its eigenvalues are always imaginary",
+        "Its trace is always positive"
+      ],
+      "correct": [0],
+      "explanation": "An orthogonal matrix has orthonormal rows and columns—that is, unit length and mutually perpendicular.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following matrices is both symmetric and orthogonal?",
+      "options": [
+        "Matrix: [[1, 0], [0, 1]]",
+        "Matrix: [[0, 1], [-1, 0]]",
+        "Matrix: [[1, 2], [2, 3]]",
+        "Matrix: [[1, -2], [2, 3]]"
+      ],
+      "correct": [0],
+      "explanation": "The identity matrix is both symmetric (Aᵗ = A) and orthogonal (AᵗA = I).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "If A is an orthogonal matrix, what is the result of A multiplied by its transpose?",
+      "options": [
+        "A",
+        "0",
+        "I",
+        "A²"
+      ],
+      "correct": [2],
+      "explanation": "By definition, an orthogonal matrix A satisfies AᵗA = I.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which type of matrix can be used to represent reflection or rotation transformations?",
+      "options": [
+        "Skew-symmetric matrices",
+        "Symmetric matrices",
+        "Orthogonal matrices",
+        "Singular matrices"
+      ],
+      "correct": [2],
+      "explanation": "Orthogonal matrices are used to represent geometric transformations like reflections and rotations.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of these is always true for a real skew-symmetric matrix A of odd order?",
+      "options": [
+        "It is invertible",
+        "Its determinant is zero",
+        "Its trace is one",
+        "It is diagonal"
+      ],
+      "correct": [1],
+      "explanation": "Any real skew-symmetric matrix of odd order has a determinant of zero.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following is always true for any real matrix A?",
+      "options": [
+        "A + Aᵗ is symmetric",
+        "A - Aᵗ is symmetric",
+        "A + Aᵗ is skew-symmetric",
+        "A - Aᵗ is orthogonal"
+      ],
+      "correct": [0],
+      "explanation": "A + Aᵗ is always symmetric because (A + Aᵗ)ᵗ = Aᵗ + A = A + Aᵗ.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Let A = [[0, 5], [-5, 0]]. What type of matrix is A?",
+      "options": [
+        "Symmetric",
+        "Skew-symmetric",
+        "Orthogonal",
+        "Upper triangular"
+      ],
+      "correct": [1],
+      "explanation": "Aᵗ = [[0, -5], [5, 0]] = -A, so the matrix is skew-symmetric.",
+      "type": "singleSelect"
+    }
+]
