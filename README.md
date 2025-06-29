@@ -167,5 +167,5 @@ By the end of this module, students will:
 
 ---
 
-🧩 For AI-powered quizzes and topic-wise flashcards based on these sections, check the [`/Quizzes/`](./Quizzes) directory in this repository.
+🧩 For AI-powered quizzes and topic-wise flashcards based on these sections, check the [`/ChoicedQuiz/quizzes/`](./Quizzes) directory in this repository.
 
