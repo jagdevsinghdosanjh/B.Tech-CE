@@ -5,20 +5,17 @@ let logoBase64 = null;
 let stampBase64 = null;
 
 const versionTitles = {
-  "1": "Chapter 1 - Number Systems",
-  "2": "Chapter 2 - Polynomials",
-  "3": "Chapter 3 - Coordinate Geometry",
-  "4": "Chapter 4 - Linear Equations in Two Variables",
-  "5": "Chapter 5 - Introduction to Euclid's Geometry",
-  "6": "Chapter 6 - Lines and Angles",
-  "7": "Chapter 7 - Triangles",
-  "8": "Chapter 8 - Quadrilaterals",
-  "9": "Chapter 9 - Circles",
-  "10": "Chapter 10 - Heron's Formula",
-  "11": "Chapter 11 - Surface Areas and Volumes",
-  "12": "Chapter 12 - Statistics",
-  "13": "Chapters 1 to 6",
-  "14": "Chapters 7 to 12"
+  "1": "Chapter 1 - Introduction to Matrices",
+  "2": "Chapter 2 - Inverse and Rank of a Matrix",
+  "3": "Chapter 3 - Rank nullity Theorem",
+  "4": "Chapter 4 - Symmetric, Skew Symmetric and Orthogonal Matrices",
+  "5": "Chapter 5 - Hermittian and Skew Hermittian Matrices",
+  "6": "Chapter 6 - Unitry Matrix",
+  "7": "Chapter 7 - Determinants",
+  "8": "Chapter 8 - System of Linear Equations",
+  "9": "Chapter 9 - Eigenvalues and Eigenvectors",
+  "10": "Chapter 10 - Digonialization of Matrices",
+  "11": "Chapter 11 - Cayley Hamilton Theorem"
 };
 
 // Load logo
