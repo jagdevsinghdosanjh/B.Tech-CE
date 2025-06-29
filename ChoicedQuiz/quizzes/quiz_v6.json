@@ -7,7 +7,7 @@
     "Matrix: [[0, -i], [i, 0]]",
     "Matrix: [[2, i], [2, 3]]"
   ],
-  "answer": [0],
+  "correct": [0],
   "tags": ["Identification", "Hermitian"],
   "difficulty": "Intermediate",
   "explanation": "A Hermitian matrix equals its own conjugate transpose. [[2, 3+i], [3−i, 5]] meets this criterion because the (1,2) and (2,1) elements are complex conjugates of each other, and the diagonal is real."
@@ -21,7 +21,7 @@
     "Matrix: [[i, 0], [0, -i]]",
     "Matrix: [[2, 3], [3, 2]]"
   ],
-  "answer": [0],
+  "correct": [0],
   "tags": ["Identification", "Skew-Hermitian"],
   "difficulty": "Intermediate",
   "explanation": "A skew-Hermitian matrix equals the negative of its own conjugate transpose. [[0, 2+i], [-2−i, 0]] meets this criterion because the (1,2) and (2,1) elements are negatives of each other."
@@ -34,7 +34,7 @@
     "Matrix: [[2, 3], [3, 2]]",
     "Matrix: [[i, 0], [0, -i]]"
   ],
-  "answer": [0],
+  "correct": [0],
   "tags": ["Identification", "Normal"],
   "difficulty": "Intermediate",
   "explanation": "A normal matrix commutes with its conjugate transpose. The identity matrix [[1, 0], [0, 1]] commutes with any matrix and is thus normal."
@@ -47,7 +47,7 @@
     "Matrix: [[2, 3], [3, 2]]",
     "Matrix: [[1, 1], [1, -1]]"
   ],
-  "answer": [1],
+  "correct": [1],
   "tags": ["Identification", "Unitary"],
   "difficulty": "Intermediate",
   "explanation": "A unitary matrix equals its own conjugate transpose. The matrix [[0, -i], [i, 0]] meets this criterion because it is orthogonal and preserves inner products."
@@ -60,7 +60,7 @@
     "Matrix: [[2, 3], [3, 2]]",
     "Matrix: [[1, 1], [1, -1]]"
   ],
-  "answer": [1],
+  "correct": [1],
   "tags": ["Identification", "Orthogonal"],
   "difficulty": "Intermediate",
   "explanation": "An orthogonal matrix equals its own transpose. The matrix [[0, -1], [1, 0]] meets this criterion because it preserves the dot product and has orthonormal columns."
@@ -73,7 +73,7 @@
     "Matrix: [[3, 0], [0, 3]]",
     "Matrix: [[1, 2], [3, 4]]"
   ],
-  "answer": [0],
+  "correct": [0],
   "tags": ["Identification", "Diagonalizable"],
   "difficulty": "Intermediate",
   "explanation": "A matrix is diagonalizable if it has a complete set of eigenvectors. The identity matrix [[1, 0], [0, 1]] is trivially diagonalizable."
@@ -86,7 +86,7 @@
     "Matrix: [[3, 0], [0, 3]]",
     "Matrix: [[1, 2], [2, 4]]"
   ],
-  "answer": [3],
+  "correct": [3],
   "tags": ["Identification", "Not Diagonalizable"],
   "difficulty": "Intermediate",
   "explanation": "A matrix is not diagonalizable if it does not have a complete set of eigenvectors. The matrix [[1, 2], [2, 4]] has a repeated eigenvalue with only one linearly independent eigenvector."
@@ -99,7 +99,7 @@
     "Matrix: [[3, 0], [0, 0]]",
     "Matrix: [[1, 2], [2, 4]]"
   ],
-  "answer": [2],
+  "correct": [2],
   "tags": ["Identification", "Singular"],
   "difficulty": "Intermediate",
   "explanation": "A singular matrix has a determinant of zero. The matrix [[3, 0], [0, 0]] has a determinant of zero and is thus singular."
@@ -112,7 +112,7 @@
     "Matrix: [[3, 0], [0, 0]]",
     "Matrix: [[1, 2], [2, 4]]"
   ],
-  "answer": [0],
+  "correct": [0],
   "tags": ["Identification", "Non-Singular"],
   "difficulty": "Intermediate",
   "explanation": "A non-singular matrix has a non-zero determinant. The identity matrix [[1, 0], [0, 1]] has a determinant of one and is thus non-singular."
@@ -125,7 +125,7 @@
     "Matrix: [[3, 4], [4, 3]]",
     "Matrix: [[1, 0], [0, 1]]"
   ],
-  "answer": [0],
+  "correct": [0],
   "tags": ["Identification", "Symmetric"],
   "difficulty": "Intermediate",
   "explanation": "A symmetric matrix equals its own transpose. The matrix [[1, 2], [2, 1]] meets this criterion because it is equal to its transpose."
@@ -138,7 +138,7 @@
     "Matrix: [[3, 4], [4, 3]]",
     "Matrix: [[1, 0], [0, 1]]"
   ],
-  "answer": [1],
+  "correct": [1],
   "tags": ["Identification", "Not Symmetric"],
   "difficulty": "Intermediate",
   "explanation": "A matrix is not symmetric if it is not equal to its transpose. The matrix [[0, 1], [2, 0]] is not equal to its transpose."
@@ -151,7 +151,7 @@
     "Matrix: [[3, 4], [4, 3]]",
     "Matrix: [[1, 0], [0, 1]]"
   ],
-  "answer": [0],
+  "correct": [0],
   "tags": ["Identification", "Skew-Symmetric"],
   "difficulty": "Intermediate",
   "explanation": "A skew-symmetric matrix equals the negative of its own transpose. The matrix [[0, 1], [-1, 0]] meets this criterion because it is equal to the negative of its transpose."
@@ -164,7 +164,7 @@
     "Matrix: [[3, 4], [4, 3]]",
     "Matrix: [[1, 0], [0, 1]]"
   ],
-  "answer": [1],
+  "correct": [1],
   "tags": ["Identification", "Not Skew-Symmetric"],
   "difficulty": "Intermediate",
   "explanation": "A matrix is not skew-symmetric if it is not equal to the negative of its transpose. The matrix [[1, 2], [2, 1]] does not meet this criterion."

@@ -7,35 +7,35 @@
         "The maximum number of linearly independent rows or columns",
         "The determinant of the matrix"
       ],
-      "answer": [2],
+      "correct": [2],
       "explanation": "The rank of a matrix is defined as the maximum number of linearly independent rows or columns in the matrix. It represents the dimension of the column space or row space.",
       "type": "singleSelect"
     },
     {
       "question": "What is the rank of the matrix [[1, 2], [2, 4]]?",
       "options": ["1", "2", "3", "0"],
-      "answer": [0],
+      "correct": [0],
       "explanation": "The second row is a multiple of the first row, so the rank is 1 (only one linearly independent row).",
       "type": "singleSelect"
     },
     {
       "question": "What is the rank of the zero matrix [[0, 0], [0, 0]]?",
       "options": ["0", "1", "2", "3"],
-      "answer": [0],
+      "correct": [0],
       "explanation": "The rank of a zero matrix is 0 because it has no linearly independent rows or columns.",
       "type": "singleSelect"
     },
     {
       "question": "What is the rank of the matrix [[1, 0, 0], [0, 1, 0], [0, 0, 1]]?",
       "options": ["1", "2", "3", "0"],
-      "answer": [2],
+      "correct": [2],
       "explanation": "This is the identity matrix, which has full rank. The rank is 3.",
       "type": "singleSelect"
     },
     {
       "question": "What is the rank of the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]?",
       "options": ["1", "2", "3", "0"],
-      "answer": [1],
+      "correct": [1],
       "explanation": "The rows of this matrix are linearly dependent, so the rank is 2.",
       "type": "singleSelect"
     },
@@ -47,7 +47,7 @@
         "Matrix: [[-1, 0], [0, -1]]",
         "Matrix: [[0, 0], [0, 0]]"
       ],
-      "answer": [0],
+      "correct": [0],
       "explanation": "The identity matrix is its own inverse: I × I = I.",
       "type": "singleSelect"
     },
@@ -59,7 +59,7 @@
         "Matrix: [[-2, 0], [0, -3]]",
         "Matrix: [[0, 0], [0, 0]]"
       ],
-      "answer": [0],
+      "correct": [0],
       "explanation": "The inverse of a diagonal matrix is obtained by taking the reciprocal of its diagonal elements.",
       "type": "singleSelect"
     },
@@ -71,7 +71,7 @@
         "[[-0.5, 1.5], [1, -2]]",
         "[[0.5, -1.5], [-1, 2]]"
       ],
-      "answer": [0],
+      "correct": [0],
       "explanation": "Inverse of A is (1/det(A)) × adj(A). For this matrix, det = -2 and adj = [[4, -2], [-3, 1]].",
       "type": "singleSelect"
     },
@@ -83,21 +83,21 @@
         "[[1, -1], [-1, 2]]",
         "[[1, 1], [1, 2]]"
       ],
-      "answer": [0],
+      "correct": [0],
       "explanation": "The inverse is computed as (1/det(A)) × adj(A). For this matrix, det = 1 and adj = [[2, -1], [-1, 1]].",
       "type": "singleSelect"
     },
     {
       "question": "What is the rank of the matrix [[1, 2], [3, 4]]?",
       "options": ["1", "2", "3", "0"],
-      "answer": [1],
+      "correct": [1],
       "explanation": "The rows of this matrix are linearly independent, so the rank is 2.",
       "type": "singleSelect"
     },
     {
       "question": "What is the rank of the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]?",
       "options": ["1", "2", "3", "4"],
-      "answer": [1],
+      "correct": [1],
       "explanation": "The rows of this matrix are linearly dependent, so the rank is 2.",
       "type": "singleSelect"
     },
@@ -109,14 +109,14 @@
         "[[2, -3], [-1, 4]]",
         "[[-2, 3], [1, -4]]"
       ],
-      "answer": [1],
+      "correct": [1],
       "explanation": "The inverse is computed as (1/det(A)) × adj(A). For this matrix, det = 5 and adj = [[4, -3], [-1, 2]].",
       "type": "singleSelect"
     },
     {
       "question": "What is the rank of the matrix [[1, 0], [0, 0]]?",
       "options": ["0", "1", "2", "3"],
-      "answer": [1],
+      "correct": [1],
       "explanation": "The rank is 1 because there is only one linearly independent row.",
       "type": "singleSelect"
     },
@@ -128,7 +128,7 @@
         "[[-3, 0], [0, -2]]",
         "[[0, 0], [0, 0]]"
       ],
-      "answer": [0],
+      "correct": [0],
       "explanation": "The inverse of a diagonal matrix is obtained by taking the reciprocal of its diagonal elements.",
       "type": "singleSelect"
     },
@@ -140,7 +140,7 @@
         "Finding eigenvalues",
         "Calculating the inverse"
       ],
-      "answer": [1],
+      "correct": [1],
       "explanation": "Rank is commonly found by reducing a matrix to its row-echelon form and counting the number of non-zero rows.",
       "type": "singleSelect"
     },
@@ -152,7 +152,7 @@
         "Matrix: [[2, 0], [0, 2]]",
         "Matrix: [[1, 0], [0, 1]]"
       ],
-      "answer": [1],
+      "correct": [1],
       "explanation": "A matrix with determinant 0 is singular and does not have an inverse. [[0, 0], [0, 0]] fits this condition.",
       "type": "singleSelect"
     },
@@ -164,7 +164,7 @@
         "Always one",
         "Always negative"
       ],
-      "answer": [0],
+      "correct": [0],
       "explanation": "If a matrix has less than full rank, it is singular, meaning its determinant is zero.",
       "type": "singleSelect"
     },
@@ -176,7 +176,7 @@
         "It exists and is unique",
         "It is equal to the transpose"
       ],
-      "answer": [2],
+      "correct": [2],
       "explanation": "A square matrix of full rank is invertible and has a unique inverse.",
       "type": "singleSelect"
     },
@@ -188,7 +188,7 @@
         "Inverse is A squared",
         "Inverse is A transpose"
       ],
-      "answer": [1],
+      "correct": [1],
       "explanation": "If A × A = I, then A is its own inverse. These are called involutory matrices.",
       "type": "singleSelect"
     },
@@ -200,7 +200,7 @@
         "Matrix: [[1, 2], [3, 4]]",
         "Matrix: [[0, 0], [0, 0]]"
       ],
-      "answer": [2],
+      "correct": [2],
       "explanation": "Matrix [[1, 2], [3, 4]] has two linearly independent rows, so its rank is 2.",
       "type": "singleSelect"
     }
