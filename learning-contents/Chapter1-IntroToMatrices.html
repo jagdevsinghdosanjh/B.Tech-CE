@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 1: Introduction to Matrices</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f7f9fc;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 30px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1, h2 {
+      color: #2e5984;
+    }
+    h3 {
+      color: #444;
+      margin-bottom: 0.4em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+    code {
+      background: #eee;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    .tip {
+      background: #e6f0ff;
+      padding: 12px;
+      border-left: 5px solid #2e5984;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 Chapter 1: Introduction to Matrices</h1>
+
+  <p>A <strong>matrix</strong> is a rectangular array of elements arranged in <em>rows</em> and <em>columns</em>. Matrices are fundamental in engineering mathematics, especially for expressing linear transformations, systems of equations, data storage, and graphics operations.</p>
+
+  <h2>🧮 Definition & Notation</h2>
+  <p>
+    A matrix \( A \) of order \( m \times n \) has \( m \) rows and \( n \) columns. It is written as:
+  </p>
+
+  <p>
+    \( A = \begin{bmatrix}
+    a_{11} & a_{12} & \dots & a_{1n} \\
+    a_{21} & a_{22} & \dots & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{m1} & a_{m2} & \dots & a_{mn}
+    \end{bmatrix} \)
+  </p>
+
+  <h2>📚 Types of Matrices</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Matrix Type</th>
+        <th>Definition</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Row Matrix</strong></td>
+        <td>Only one row</td>
+        <td>\( \begin{bmatrix} 4 & 5 & 6 \end{bmatrix} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Column Matrix</strong></td>
+        <td>Only one column</td>
+        <td>\( \begin{bmatrix} 7 \\ 8 \\ 9 \end{bmatrix} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Zero Matrix</strong></td>
+        <td>All entries are zero</td>
+        <td>\( \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Square Matrix</strong></td>
+        <td>Same number of rows and columns</td>
+        <td>\( \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Diagonal Matrix</strong></td>
+        <td>Non-zero elements only on the main diagonal</td>
+        <td>\( \begin{bmatrix} 4 & 0 \\ 0 & -1 \end{bmatrix} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Scalar Matrix</strong></td>
+        <td>Diagonal matrix with all equal diagonal entries</td>
+        <td>\( \begin{bmatrix} 3 & 0 \\ 0 & 3 \end{bmatrix} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Identity Matrix</strong></td>
+        <td>Diagonal matrix with 1 on the diagonal</td>
+        <td>\( I_2 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Upper Triangular</strong></td>
+        <td>All entries below the diagonal are 0</td>
+        <td>\( \begin{bmatrix} 2 & 3 \\ 0 & 5 \end{bmatrix} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Lower Triangular</strong></td>
+        <td>All entries above the diagonal are 0</td>
+        <td>\( \begin{bmatrix} 6 & 0 \\ 3 & 7 \end{bmatrix} \)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🌐 Applications in Engineering</h2>
+  <ul>
+    <li><strong>Computer Graphics:</strong> 2D/3D transformations using transformation matrices</li>
+    <li><strong>Network Analysis:</strong> Incidence and adjacency matrices</li>
+    <li><strong>Linear Systems:</strong> Solution of equations in compact matrix form</li>
+    <li><strong>Machine Learning:</strong> Data is stored and manipulated as matrices (tensors)</li>
+    <li><strong>Physics & Quantum Mechanics:</strong> Representing states and operators</li>
+  </ul>
+
+  <div class="tip">
+    <strong>Mnemonic Tip 💡:</strong> If it’s diagonal, it’s a Square. If it’s all 0s, it’s Zero. If it’s 1s on the diagonal—it’s your identity!
+  </div>
+
+  <h2>📝 Practice Question</h2>
+  <p><strong>Q:</strong> Identify the type and order of the following matrix:</p>
+
+  <p>
+
+\[
+  M = \begin{bmatrix}
+  2 & 0 & 0 \\
+  0 & 2 & 0 \\
+  0 & 0 & 2
+  \end{bmatrix}
+  \]
+
+</p>
+
+  <p><strong>Answer:</strong> This is a <em>Scalar Matrix</em> of order \( 3 \times 3 \), since all diagonal entries are equal and non-diagonal entries are zero.</p>
+
+  <hr/>
+
+  <p><strong>Next Steps:</strong> Proceed to Chapter 2: <em>Inverse and Rank of a Matrix</em> in your SmartSchoolAI portal or learning dashboard. You're building a strong foundation!</p>
+
+</body>
+</html>
