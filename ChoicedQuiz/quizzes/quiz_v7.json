@@ -1,14 +1,62 @@
 [
   {
-    "question": "Which is a polynomial?",
-    "options": ["x^2 + 3", "√x + 1", "1/x", "x⁻¹ + 2"],
-    "correct": 0,
-    "explanation": "Only x² + 3 follows all rules of polynomials."
+    "question": "If two rows of a square matrix are interchanged, what happens to the determinant?",
+    "options": [
+      "The determinant remains unchanged",
+      "The determinant is doubled",
+      "The determinant changes sign",
+      "The determinant becomes zero"
+    ],
+    "correct": [2],
+    "explanation": "Swapping two rows of a matrix changes the sign of the determinant.",
+    "type": "singleSelect"
   },
   {
-    "question": "Degree of 2x⁴ - 7x² + 5 is?",
-    "options": ["2", "4", "1", "3"],
-    "correct": 1,
-    "explanation": "The highest exponent is 4."
+    "question": "What is the cofactor of an element in a matrix used for?",
+    "options": [
+      "To compute transpose",
+      "To calculate the determinant via expansion",
+      "To solve linear equations",
+      "To reduce matrix rank"
+    ],
+    "correct": [1],
+    "explanation": "Cofactors are used in cofactor expansion (Laplace expansion) to compute determinants.",
+    "type": "singleSelect"
+  },
+  {
+    "question": "If a matrix has two proportional rows, what is its determinant?",
+    "options": [
+      "It is 1",
+      "It is non-zero",
+      "It is equal to the sum of elements",
+      "It is 0"
+    ],
+    "correct": [3],
+    "explanation": "Proportional rows indicate linear dependence; hence, the determinant is 0.",
+    "type": "singleSelect"
+  },
+  {
+    "question": "If a scalar 'k' multiplies one row of a matrix, how does it affect the determinant?",
+    "options": [
+      "Determinant is multiplied by k",
+      "Determinant remains the same",
+      "Determinant becomes zero",
+      "Determinant is divided by k"
+    ],
+    "correct": [0],
+    "explanation": "Multiplying one row by k multiplies the determinant by k.",
+    "type": "singleSelect"
+  },
+  {
+    "question": "In a cofactor expansion, which signs are used for minors?",
+    "options": [
+      "All signs are positive",
+      "Signs follow a checkerboard pattern",
+      "All signs are negative",
+      "Signs are alternating along columns only"
+    ],
+    "correct": [1],
+    "explanation": "Signs follow a checkerboard pattern defined by (-1)^(i+j).",
+    "type": "singleSelect"
   }
 ]
