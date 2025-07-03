@@ -15,7 +15,21 @@ const versionTitles = {
   "8": "Chapter 8 - System of Linear Equations",
   "9": "Chapter 9 - Eigenvalues and Eigenvectors",
   "10": "Chapter 10 - Digonialization of Matrices",
-  "11": "Chapter 11 - Cayley Hamilton Theorem"
+  "11": "Chapter 11 - Cayley Hamilton Theorem",
+  "12": "Chapter 12 - Convergence & Divergence of Infinite Series",
+  "13": "Chapter 13 - Geometric Series Test",
+  "14": "Chapter 14 - P Series Test",
+  "15": "Chapter 15 - Comparison Test",
+  "16": "Chapter 16 - D'Alembert's Ratio Test",
+  "17": "Chapter 17 - Cauchy's Root Test",
+  "18": "Chapter 18 - Integral Test",
+  "19": "Chapter 19 - Raabe's Test",
+  "20": "Chapter 20- Logarithmic Test",
+  "21": "Chapter 21 - Gauss's Test",
+  "22": "Chapter 22 - Alternating Series & Leibnitz' Rule",
+  "23": "Chapter 23 - Power Series",
+  "24": "Chapter 24 - Radius & Interval of Convergence",
+  "25": "Chapter 25 - Inclusive for Chapter 1 to 13"
 };
 
 // Load logo
@@ -160,32 +174,32 @@ function generatePDF() {
   doc.setFontSize(11);
 
   data.responses.forEach((res, index) => {
-  const block = [
-    `${index + 1}. ${res.question}`,
-    `Your answer: ${res.selected}`,
-    `Correct answer: ${res.correct}`,
-    `Explanation: ${res.explanation}`
-  ];
+    const block = [
+      `${index + 1}. ${res.question}`,
+      `Your answer: ${res.selected}`,
+      `Correct answer: ${res.correct}`,
+      `Explanation: ${res.explanation}`
+    ];
 
-  // Estimate total height before printing the block
-  const totalHeight = block.reduce((acc, line) => {
-    const wrapped = doc.splitTextToSize(line, usableWidth);
-    return acc + wrapped.length * 6;
-  }, 0);
+    // Estimate total height before printing the block
+    const totalHeight = block.reduce((acc, line) => {
+      const wrapped = doc.splitTextToSize(line, usableWidth);
+      return acc + wrapped.length * 6;
+    }, 0);
 
-  if (y + totalHeight > pageHeight - marginBottom) {
-    doc.addPage();
-    y = marginTop;
-  }
+    if (y + totalHeight > pageHeight - marginBottom) {
+      doc.addPage();
+      y = marginTop;
+    }
 
-  block.forEach(line => {
-    const wrapped = doc.splitTextToSize(line, usableWidth);
-    doc.text(wrapped, marginLeft, y);
-    y += wrapped.length * 6;
+    block.forEach(line => {
+      const wrapped = doc.splitTextToSize(line, usableWidth);
+      doc.text(wrapped, marginLeft, y);
+      y += wrapped.length * 6;
+    });
+
+    y += 4; // extra spacing between questions
   });
-
-  y += 4; // extra spacing between questions
-});
 
 
   // data.responses.forEach((res, index) => {
