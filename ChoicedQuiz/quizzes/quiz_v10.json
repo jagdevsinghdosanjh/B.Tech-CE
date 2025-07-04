@@ -1,14 +1,332 @@
 [
   {
-    "question": "Which is a polynomial?",
-    "options": ["x^2 + 3", "√x + 1", "1/x", "x⁻¹ + 2"],
+    "question": "Which condition characterizes a diagonalizable matrix A?",
+    "options": [
+      "There exists an invertible P such that P⁻¹AP is diagonal",
+      "A commutes with every matrix",
+      "A is symmetric",
+      "A has distinct entries"
+    ],
     "correct": 0,
-    "explanation": "Only x² + 3 follows all rules of polynomials."
+    "explanation": "A is diagonalizable exactly when it is similar to a diagonal matrix, i.e. ∃ invertible P with P⁻¹AP diagonal."
   },
   {
-    "question": "Degree of 2x⁴ - 7x² + 5 is?",
-    "options": ["2", "4", "1", "3"],
-    "correct": 1,
-    "explanation": "The highest exponent is 4."
+    "question": "A size-n matrix with n distinct eigenvalues is always:",
+    "options": [
+      "Diagonalizable",
+      "Singular",
+      "Orthogonal",
+      "Nilpotent"
+    ],
+    "correct": 0,
+    "explanation": "Distinct eigenvalues guarantee n linearly independent eigenvectors, so the matrix is diagonalizable."
+  },
+  {
+    "question": "In the decomposition A = PDP⁻¹, the columns of P are:",
+    "options": [
+      "Eigenvectors of A",
+      "Rows of A",
+      "Pivot columns of A",
+      "Columns of D"
+    ],
+    "correct": 0,
+    "explanation": "P is formed by the eigenvectors of A as its columns, which diagonalize A."
+  },
+  {
+    "question": "If the algebraic multiplicity of an eigenvalue exceeds its geometric multiplicity, then A is:",
+    "options": [
+      "Not diagonalizable",
+      "Always diagonalizable",
+      "Orthogonally diagonalizable",
+      "Invertible"
+    ],
+    "correct": 0,
+    "explanation": "Diagonalizability requires geometric multiplicity = algebraic multiplicity for each eigenvalue."
+  },
+  {
+    "question": "Which class of real matrices is guaranteed to be diagonalizable over ℝ?",
+    "options": [
+      "Real symmetric matrices",
+      "Real skew-symmetric matrices",
+      "Real orthogonal matrices",
+      "Real singular matrices"
+    ],
+    "correct": 0,
+    "explanation": "By the Spectral Theorem, every real symmetric matrix is orthogonally diagonalizable over ℝ."
+  },
+  {
+    "question": "The 2×2 rotation matrix [[0, -1], [1, 0]] is diagonalizable over:",
+    "options": [
+      "ℂ but not ℝ",
+      "ℝ only",
+      "Neither ℝ nor ℂ",
+      "Both ℝ and ℂ"
+    ],
+    "correct": 0,
+    "explanation": "Its eigenvalues are ±i (complex), so it is diagonalizable over ℂ but not over ℝ."
+  },
+  {
+    "question": "If A = PDP⁻¹, then for the polynomial f(x)=x² we have f(A) =",
+    "options": [
+      "PD²P⁻¹",
+      "PDP",
+      "D²",
+      "P⁻¹D²P"
+    ],
+    "correct": 0,
+    "explanation": "Functional calculus on diagonalizable A gives f(A)=P f(D) P⁻¹; here f(D)=D²."
+  },
+  {
+    "question": "Two diagonalizable matrices A and B are simultaneously diagonalizable if they:",
+    "options": [
+      "Commute and share eigenvectors",
+      "Have the same trace",
+      "Are both invertible",
+      "Have distinct eigenvalues"
+    ],
+    "correct": 0,
+    "explanation": "Commuting diagonalizable matrices are simultaneously diagonalizable exactly when they share a common eigenvector basis."
+  },
+  {
+    "question": "The minimal polynomial of a diagonalizable matrix must:",
+    "options": [
+      "Split into distinct linear factors",
+      "Have repeated roots",
+      "Be degree n²",
+      "Equal its characteristic polynomial"
+    ],
+    "correct": 0,
+    "explanation": "Diagonalizability ⇔ minimal polynomial has no repeated roots (distinct linear factors)."
+  },
+  {
+    "question": "A 3×3 matrix has eigenvalues {2, 2, 3}. Its eigenspace for λ=2 has dimension 2. Is it diagonalizable?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if symmetric",
+      "Only over ℂ"
+    ],
+    "correct": 0,
+    "explanation": "Geometric mult(2)=2 equals its algebraic mult, and λ=3 adds one more eigenvector, giving 3 total independent eigenvectors."
+  },
+  {
+    "question": "Which additional structure allows one to choose P orthogonal in A = PDPᵀ?",
+    "options": [
+      "A is real symmetric",
+      "A is skew-symmetric",
+      "A is defective",
+      "A has repeated eigenvalues"
+    ],
+    "correct": 0,
+    "explanation": "Real symmetric matrices are orthogonally diagonalizable: P can be chosen orthogonal (P⁻¹=Pᵀ)."
+  },
+  {
+    "question": "The Jordan block J = [[3, 1], [0, 3]] is:",
+    "options": [
+      "Not diagonalizable",
+      "Diagonalizable",
+      "Orthogonally diagonalizable",
+      "Invertible only if 3≠0"
+    ],
+    "correct": 0,
+    "explanation": "J has a single eigenvalue with one eigenvector (geo mult=1<alg mult=2), so it is not diagonalizable."
+  },
+  {
+    "question": "For A diagonalizable, trace(A) equals:",
+    "options": [
+      "Sum of its eigenvalues",
+      "Product of its eigenvalues",
+      "Sum of diagonal entries of P",
+      "Rank of A"
+    ],
+    "correct": 0,
+    "explanation": "Similarity preserves trace, and trace of a diagonal matrix is the sum of its diagonal (eigen) entries."
+  },
+  {
+    "question": "If A is invertible and diagonalizable as A = PDP⁻¹, then A⁻¹ =",
+    "options": [
+      "P D⁻¹ P⁻¹",
+      "P⁻¹ D P",
+      "D⁻¹",
+      "P D P⁻¹"
+    ],
+    "correct": 0,
+    "explanation": "Since A⁻¹ = (PDP⁻¹)⁻¹ = P D⁻¹ P⁻¹, the eigenvalues invert to 1/λ."
+  },
+  {
+    "question": "When A is diagonalizable, the vector space decomposes into:",
+    "options": [
+      "Direct sum of its eigenspaces",
+      "Union of its eigenspaces",
+      "Intersection of its eigenspaces",
+      "Product of its eigenspaces"
+    ],
+    "correct": 0,
+    "explanation": "Diagonalizability means Rⁿ (or ℂⁿ) is the direct sum of the eigenspaces of A."
+  },
+  {
+    "question": "Let A and B be diagonalizable n×n matrices that commute (AB = BA). Which statement is true?",
+    "options": [
+      "They are simultaneously diagonalizable",
+      "AB has distinct eigenvalues",
+      "A + B is singular",
+      "A and B share the same trace"
+    ],
+    "correct": 0,
+    "explanation": "Two commuting diagonalizable matrices can be diagonalized by the same similarity transformation."
+  },
+  {
+    "question": "A real 4×4 matrix A has eigenvalues {2 (mult.2), 3 (mult.2)}. Its minimal polynomial is (x−2)(x−3). Is A diagonalizable over ℝ?",
+    "options": [
+      "Yes, because minimal polynomial splits without repeated factors",
+      "No, because algebraic multiplicities exceed geometric",
+      "Yes, only if A is symmetric",
+      "No, because eigenvalues have multiplicity >1"
+    ],
+    "correct": 0,
+    "explanation": "A diagonalizable ⇔ minimal polynomial has no repeated factors; here it’s (x−2)(x−3)."
+  },
+  {
+    "question": "Which real matrix is diagonalizable over ℂ but not over ℝ?",
+    "options": [
+      "[[0, -1], [1, 0]]",
+      "[[1, 1], [0, 1]]",
+      "[[2, 0], [0, 3]]",
+      "[[0, 0], [0, 0]]"
+    ],
+    "correct": 0,
+    "explanation": "This rotation matrix has complex eigenvalues ±i, so it diagonalizes over ℂ only."
+  },
+  {
+    "question": "A matrix A has Jordan form with a single 3×3 block for eigenvalue λ. Which is true?",
+    "options": [
+      "A is not diagonalizable",
+      "A is diagonalizable if λ≠0",
+      "A has three independent eigenvectors",
+      "A has minimal polynomial (x−λ)"
+    ],
+    "correct": 0,
+    "explanation": "A single size-3 Jordan block yields only one eigenvector, so A isn’t diagonalizable."
+  },
+  {
+    "question": "If A is diagonalizable and p(x) is any polynomial, what can be said about p(A)?",
+    "options": [
+      "p(A) is diagonalizable",
+      "p(A) is nilpotent",
+      "p(A) is singular",
+      "p(A) has repeated eigenvalues"
+    ],
+    "correct": 0,
+    "explanation": "When A=PDP⁻¹, p(A)=P p(D) P⁻¹ remains diagonalizable."
+  },
+  {
+    "question": "Which condition ensures a real matrix A is orthogonally diagonalizable?",
+    "options": [
+      "A is symmetric",
+      "A has distinct eigenvalues",
+      "A is invertible",
+      "A has positive determinant"
+    ],
+    "correct": 0,
+    "explanation": "Spectral Theorem: a real symmetric matrix admits an orthogonal eigenbasis."
+  },
+  {
+    "question": "Two diagonal matrices D₁ and D₂ are similar. What must hold?",
+    "options": [
+      "They have the same diagonal entries up to permutation",
+      "D₁ + D₂ is diagonalizable",
+      "D₁D₂ = D₂D₁",
+      "They share the same eigenvectors"
+    ],
+    "correct": 0,
+    "explanation": "Similarity of diagonals means one can permute entries to match the other."
+  },
+  {
+    "question": "Let A be diagonalizable with eigenbasis {v₁,…,vₙ}. What is the dimension of A’s eigenspaces?",
+    "options": [
+      "Algebraic multiplicity of each eigenvalue",
+      "Rank of A",
+      "Number of Jordan blocks",
+      "Total number of eigenvalues"
+    ],
+    "correct": 0,
+    "explanation": "Each eigenspace dimension equals its eigenvalue’s algebraic multiplicity for diagonalizable A."
+  },
+  {
+    "question": "Which statement characterizes the minimal polynomial m_A(x) of a diagonalizable matrix A?",
+    "options": [
+      "m_A(x) has only simple linear factors",
+      "m_A(x) divides characteristic polynomial with multiplicity",
+      "deg(m_A) = n²",
+      "m_A(x) has complex coefficients only"
+    ],
+    "correct": 0,
+    "explanation": "Diagonalizability ⇔ minimal polynomial splits into distinct linear factors."
+  },
+  {
+    "question": "For a diagonalizable A, the matrix exponential e^A equals:",
+    "options": [
+      "Pe^DP⁻¹",
+      "e^D",
+      "P⁻¹e^DP",
+      "e^PDe⁻P"
+    ],
+    "correct": 0,
+    "explanation": "If A=PDP⁻¹ then e^A=P e^D P⁻¹, with e^D diagonal of exponentials."
+  },
+  {
+    "question": "Which class of non-symmetric matrices is always diagonalizable over ℂ?",
+    "options": [
+      "Normal matrices",
+      "Skew-symmetric matrices",
+      "Nilpotent matrices",
+      "Defective matrices"
+    ],
+    "correct": 0,
+    "explanation": "Normal (A A* = A* A) matrices admit a unitary diagonalization over ℂ."
+  },
+  {
+    "question": "A diagonalizable matrix A satisfies Aᵏ = I for some integer k>1. What are its eigenvalues?",
+    "options": [
+      "kth roots of unity",
+      "±1 only",
+      "Any real numbers",
+      "Zero only"
+    ],
+    "correct": 0,
+    "explanation": "If Aᵏ=I then each eigenvalue λᵏ=1 ⇒ λ is a root of unity."
+  },
+  {
+    "question": "Which of these implies A is not diagonalizable?",
+    "options": [
+      "Existence of a Jordan block of size ≥2",
+      "Distinct eigenvalues",
+      "Minimal polynomial has no repeated factors",
+      "Symmetry of A"
+    ],
+    "correct": 0,
+    "explanation": "A Jordan block larger than 1 indicates fewer eigenvectors than needed."
+  },
+  {
+    "question": "What is simultaneous diagonalization of a set {A₁,…,A_m}?",
+    "options": [
+      "There exists P such that ∀i, P⁻¹A_iP are diagonal",
+      "Sum ∑A_i is diagonal",
+      "Each A_i has the same eigenvalues",
+      "All A_i commute pairwise"
+    ],
+    "correct": 0,
+    "explanation": "Simultaneous diagonalization means one similarity P diagonalizes every A_i."
+  },
+  {
+    "question": "Which factorization directly exhibits A’s diagonalizability?",
+    "options": [
+      "A = XΛX⁻¹ where Λ is diagonal",
+      "A = LU",
+      "A = QR",
+      "A = BBᵀ"
+    ],
+    "correct": 0,
+    "explanation": "The decomposition XΛX⁻¹ shows eigenvectors in X and eigenvalues on Λ."
   }
 ]
