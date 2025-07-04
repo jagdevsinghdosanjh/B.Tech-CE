@@ -1,14 +1,332 @@
 [
   {
-    "question": "Which is a polynomial?",
-    "options": ["x^2 + 3", "√x + 1", "1/x", "x⁻¹ + 2"],
+    "question": "Which equation must be solved to find the eigenvalues of a square matrix A?",
+    "options": [
+      "det(A - λI) = 0",
+      "det(A + λI) = 0",
+      "Av = λv",
+      "trace(A) = 0"
+    ],
     "correct": 0,
-    "explanation": "Only x² + 3 follows all rules of polynomials."
+    "explanation": "Eigenvalues λ satisfy the characteristic equation det(A - λI) = 0."
   },
   {
-    "question": "Degree of 2x⁴ - 7x² + 5 is?",
-    "options": ["2", "4", "1", "3"],
+    "question": "What are the eigenvalues of the matrix [[2, 1], [1, 2]]?",
+    "options": [
+      "3 and 1",
+      "2 and 1",
+      "1 and -1",
+      "3 and -1"
+    ],
+    "correct": 0,
+    "explanation": "Solving det([[2,1],[1,2]] - λI) yields λ = 3 and λ = 1."
+  },
+  {
+    "question": "For an upper triangular matrix, its eigenvalues are:",
+    "options": [
+      "the diagonal entries",
+      "the trace",
+      "the determinant",
+      "all zeros"
+    ],
+    "correct": 0,
+    "explanation": "A triangular matrix has eigenvalues exactly equal to its diagonal elements."
+  },
+  {
+    "question": "If A is a real symmetric matrix, eigenvectors corresponding to distinct eigenvalues are:",
+    "options": [
+      "orthogonal",
+      "linearly dependent",
+      "parallel",
+      "unit length"
+    ],
+    "correct": 0,
+    "explanation": "Real symmetric matrices have orthogonal eigenvectors for different λ."
+  },
+  {
+    "question": "The sum of all eigenvalues of a matrix A equals:",
+    "options": [
+      "trace(A)",
+      "det(A)",
+      "rank(A)",
+      "nullity(A)"
+    ],
+    "correct": 0,
+    "explanation": "The trace of A (sum of diagonal entries) equals the sum of its eigenvalues."
+  },
+  {
+    "question": "The product of all eigenvalues of A equals:",
+    "options": [
+      "det(A)",
+      "trace(A)",
+      "rank(A)",
+      "the characteristic polynomial"
+    ],
+    "correct": 0,
+    "explanation": "The determinant of A equals the product of its eigenvalues."
+  },
+  {
+    "question": "If λ is a nonzero eigenvalue of invertible matrix A, then an eigenvalue of A⁻¹ is:",
+    "options": [
+      "1/λ",
+      "λ",
+      "-λ",
+      "det(A)/λ"
+    ],
+    "correct": 0,
+    "explanation": "Eigenvalues of A⁻¹ are reciprocals of the eigenvalues of A."
+  },
+  {
+    "question": "A square matrix A is singular if and only if:",
+    "options": [
+      "zero is an eigenvalue",
+      "all eigenvalues are nonzero",
+      "it has n linearly independent eigenvectors",
+      "it is diagonalizable"
+    ],
+    "correct": 0,
+    "explanation": "Singularity ⇔ det(A)=0 ⇔ at least one eigenvalue is zero."
+  },
+  {
+    "question": "The geometric multiplicity of an eigenvalue λ is:",
+    "options": [
+      "dimension of its eigenspace",
+      "its algebraic multiplicity",
+      "rank(A - λI)",
+      "trace(A - λI)"
+    ],
+    "correct": 0,
+    "explanation": "Geometric multiplicity is the dimension of the nullspace of (A - λI)."
+  },
+  {
+    "question": "A 3×3 matrix with three distinct eigenvalues is always:",
+    "options": [
+      "diagonalizable",
+      "non-diagonalizable",
+      "singular",
+      "defective"
+    ],
+    "correct": 0,
+    "explanation": "Distinct eigenvalues guarantee a full set of independent eigenvectors."
+  },
+  {
+    "question": "The eigenvalues of the rotation matrix [[cosθ, -sinθ], [sinθ, cosθ]] are:",
+    "options": [
+      "e^(iθ) and e^(-iθ)",
+      "cosθ and sinθ",
+      "1 and 1",
+      "0 and 0"
+    ],
+    "correct": 0,
+    "explanation": "Its characteristic equation yields complex conjugates e^{±iθ}."
+  },
+  {
+    "question": "A defective matrix is one that:",
+    "options": [
+      "cannot be diagonalized",
+      "has n independent eigenvectors",
+      "has distinct eigenvalues",
+      "is symmetric"
+    ],
+    "correct": 0,
+    "explanation": "If there aren’t enough eigenvectors to form a basis, the matrix is defective."
+  },
+  {
+    "question": "What are the eigenvalues of [[0, -1], [1, 0]]?",
+    "options": [
+      "i and -i",
+      "1 and -1",
+      "0 and 0",
+      "±1"
+    ],
+    "correct": 0,
+    "explanation": "This 90° rotation matrix has imaginary eigenvalues ±i."
+  },
+  {
+    "question": "The characteristic polynomial of a 3×3 matrix is of degree:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 2,
+    "explanation": "A n×n matrix yields a characteristic polynomial of degree n."
+  },
+  {
+    "question": "For A = [[4, 0], [1, 3]], an eigenvector for λ = 4 is:",
+    "options": [
+      "[1, 1]",
+      "[1, 0]",
+      "[0, 1]",
+      "[1, 2]"
+    ],
+    "correct": 0,
+    "explanation": "Solving (A - 4I)v = 0 gives x = y, so [1, 1] is an eigenvector."
+  },
+  {
+    "question": "If matrices A and B are similar, which is true?",
+    "options": [
+      "They have the same eigenvalues",
+      "They have the same eigenvectors",
+      "They have equal diagonal entries",
+      "They have the same determinant only"
+    ],
+    "correct": 0,
+    "explanation": "Similarity preserves eigenvalues but not necessarily eigenvectors."
+  },
+  {
+    "question": "Eigenvalues of a real orthogonal matrix satisfy which property?",
+    "options": [
+      "They are real and ±1",
+      "They have absolute value 1",
+      "They are non-negative",
+      "They sum to 1"
+    ],
     "correct": 1,
-    "explanation": "The highest exponent is 4."
+    "explanation": "Orthogonal matrices satisfy A Aᵀ = I, so eigenvalues lie on the unit circle."
+  },
+  {
+    "question": "A projection matrix P satisfies P² = P. Its eigenvalues can only be:",
+    "options": [
+      "0 or 1",
+      "-1 or 1",
+      "Any real number less than 1",
+      "Equal to its trace"
+    ],
+    "correct": 0,
+    "explanation": "Idempotency implies eigenvalues satisfy λ² = λ ⇒ λ = 0 or 1."
+  },
+  {
+    "question": "What defines the spectral radius ρ(A) of a matrix?",
+    "options": [
+      "Minimum absolute eigenvalue",
+      "Maximum absolute eigenvalue",
+      "Sum of absolute eigenvalues",
+      "Product of absolute eigenvalues"
+    ],
+    "correct": 1,
+    "explanation": "Spectral radius is the largest absolute value among the eigenvalues."
+  },
+  {
+    "question": "The power method converges to the dominant eigenvector if:",
+    "options": [
+      "A has a unique eigenvalue of maximum absolute value",
+      "A is symmetric",
+      "A is invertible",
+      "A is singular"
+    ],
+    "correct": 0,
+    "explanation": "A unique largest-magnitude eigenvalue ensures convergence to its eigenvector."
+  },
+  {
+    "question": "Gershgorin circle theorem ensures that all eigenvalues of A lie within:",
+    "options": [
+      "Union of row-based discs centered at aᵢᵢ",
+      "Union of discs centered at zero",
+      "Eigenvalue spread",
+      "Convex hull of singular values"
+    ],
+    "correct": 0,
+    "explanation": "Each eigenvalue lies in at least one Gershgorin disc around a diagonal entry."
+  },
+  {
+    "question": "A (right) stochastic matrix has rows summing to 1. Which is always an eigenvalue?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "Trace of the matrix"
+    ],
+    "correct": 1,
+    "explanation": "Row sums of one imply the all-ones vector is an eigenvector for eigenvalue 1."
+  },
+  {
+    "question": "In det(λI – A) = λⁿ + c₁λⁿ⁻¹ + … + cₙ, c₁ equals:",
+    "options": [
+      "–trace(A)",
+      "trace(A)",
+      "det(A)",
+      "rank(A)"
+    ],
+    "correct": 0,
+    "explanation": "Coefficient c₁ = –∑λᵢ = –trace(A)."
+  },
+  {
+    "question": "Eigenvalues of a 2×2 matrix [a b; c d] are given by:",
+    "options": [
+      "(a+d ± √((a–d)² + 4bc))/2",
+      "ad–bc",
+      "a+d",
+      "√(ad)"
+    ],
+    "correct": 0,
+    "explanation": "Solve det([a–λ b; c d–λ]) to get λ = (a+d ± …)/2."
+  },
+  {
+    "question": "If N is nilpotent (Nᵏ = 0), then its eigenvalues are:",
+    "options": [
+      "All zero",
+      "Positive real",
+      "Negative real",
+      "Nonzero complex"
+    ],
+    "correct": 0,
+    "explanation": "Nilpotent ⇒ characteristic polynomial λⁿ = 0 ⇒ all eigenvalues zero."
+  },
+  {
+    "question": "A matrix A is diagonalizable over ℂ if and only if its minimal polynomial:",
+    "options": [
+      "Splits into distinct linear factors",
+      "Has repeated roots",
+      "Has degree > n",
+      "Has no real roots"
+    ],
+    "correct": 0,
+    "explanation": "Diagonalizability ⇔ minimal polynomial has no repeated factors."
+  },
+  {
+    "question": "For an eigenvalue λ of A, geometric multiplicity is always:",
+    "options": [
+      "≤ its algebraic multiplicity",
+      "≥ its algebraic multiplicity",
+      "Equal to matrix rank",
+      "Equal to its trace"
+    ],
+    "correct": 0,
+    "explanation": "Dimension of eigenspace (geometric) cannot exceed algebraic multiplicity."
+  },
+  {
+    "question": "A normal matrix satisfies A A* = A* A. Its eigenvectors can be chosen to be:",
+    "options": [
+      "Orthonormal",
+      "Linearly dependent",
+      "All with magnitude 1",
+      "Summing to zero"
+    ],
+    "correct": 0,
+    "explanation": "Normality ensures there is a complete orthonormal set of eigenvectors."
+  },
+  {
+    "question": "If A is block diagonal with blocks B and C, then eigenvalues of A are:",
+    "options": [
+      "Union of eigenvalues of B and C",
+      "Intersection of eigenvalues of B and C",
+      "Sum of eigenvalues",
+      "Products of eigenvalues"
+    ],
+    "correct": 0,
+    "explanation": "Block diagonal structure implies its spectrum is the union of block spectra."
+  },
+  {
+    "question": "What is true about trace(Aᵏ) in terms of eigenvalues?",
+    "options": [
+      "trace(Aᵏ) = ∑λᵢᵏ",
+      "trace(Aᵏ) = ∏λᵢᵏ",
+      "trace(Aᵏ) = max λᵢᵏ",
+      "trace(Aᵏ) = 0 for k>1"
+    ],
+    "correct": 0,
+    "explanation": "trace(Aᵏ) equals the sum of the k-th powers of the eigenvalues."
   }
 ]
