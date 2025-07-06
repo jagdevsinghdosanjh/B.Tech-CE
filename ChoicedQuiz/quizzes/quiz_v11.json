@@ -1,14 +1,287 @@
 [
   {
-    "question": "Which is a polynomial?",
-    "options": ["x^2 + 3", "√x + 1", "1/x", "x⁻¹ + 2"],
+    "question": "What does the Cayley–Hamilton theorem assert for a square matrix A with characteristic polynomial p(λ)?",
+    "options": [
+      "p(A) = 0",
+      "A⁻¹ = p(A)",
+      "det(A) = p(0)",
+      "trace(A) = p(1)"
+    ],
     "correct": 0,
-    "explanation": "Only x² + 3 follows all rules of polynomials."
+    "explanation": "The theorem states that every square matrix satisfies its own characteristic polynomial, i.e. p(A)=0."
   },
   {
-    "question": "Degree of 2x⁴ - 7x² + 5 is?",
-    "options": ["2", "4", "1", "3"],
-    "correct": 1,
-    "explanation": "The highest exponent is 4."
+    "question": "For a 2×2 matrix A with characteristic polynomial λ² – (tr A) λ + det(A), the Cayley–Hamilton theorem yields which identity?",
+    "options": [
+      "A² – (tr A) A + det(A) I = 0",
+      "A² + (tr A) A + det(A) I = 0",
+      "(tr A) A – A² + det(A) I = 0",
+      "λ² I – (tr A) A + det(A) A = 0"
+    ],
+    "correct": 0,
+    "explanation": "Substitute A into its char-poly: A² – (tr A)A + det(A)I = 0."
+  },
+  {
+    "question": "Assuming A is invertible and 2×2, how can Cayley–Hamilton theorem be used to express A⁻¹?",
+    "options": [
+      "A⁻¹ = 1/det(A)·((tr A) I − A)",
+      "A⁻¹ = (tr A) A − det(A) I",
+      "A⁻¹ = A − (tr A) I",
+      "A⁻¹ = p(A)"
+    ],
+    "correct": 0,
+    "explanation": "From A² – (tr A)A + det(A)I = 0, solve for A⁻¹: A⁻¹ = ((tr A)I – A)/det(A)."
+  },
+  {
+    "question": "Which statement regarding the minimal polynomial m(λ) and characteristic polynomial p(λ) of A is true?",
+    "options": [
+      "m(λ) divides p(λ)",
+      "p(λ) divides m(λ)",
+      "m(λ) + p(λ) = 0",
+      "m(0) = det(A)"
+    ],
+    "correct": 0,
+    "explanation": "The minimal polynomial always divides the characteristic polynomial of A."
+  },
+  {
+    "question": "If a 3×3 matrix A has characteristic polynomial (λ − 2)³, what does Cayley–Hamilton imply?",
+    "options": [
+      "(A − 2I)³ = 0",
+      "(A − 2I)² = 0",
+      "A³ = 8I",
+      "A³ − 6A² + 12A − 8I = 0"
+    ],
+    "correct": 0,
+    "explanation": "Substitute A into (λ − 2)³=0 to get (A−2I)³=0."
+  },
+  {
+    "question": "Which of the following is a direct consequence of Cayley–Hamilton when applied to any polynomial f(λ)?",
+    "options": [
+      "f(A) = r(A), where r is the remainder of f mod p",
+      "f(A) = 0 for all f",
+      "f(λ) has no effect",
+      "p(f) = 0"
+    ],
+    "correct": 0,
+    "explanation": "Since p(A)=0, any f(A) reduces to the remainder r(A) upon polynomial division by p."
+  },
+  {
+    "question": "For the companion matrix C of λⁿ + cₙ₋₁λⁿ⁻¹ + … + c₀, Cayley–Hamilton tells us that",
+    "options": [
+      "Cⁿ + cₙ₋₁Cⁿ⁻¹ + … + c₀ I = 0",
+      "Cⁿ = 0",
+      "det(C) I = 0",
+      "trace(C) I = C"
+    ],
+    "correct": 0,
+    "explanation": "By definition of its char-poly, the companion matrix satisfies p(C)=0."
+  },
+  {
+    "question": "How can the adjugate of an invertible matrix A be expressed via its characteristic polynomial p(λ)?",
+    "options": [
+      "adj(A) = (−1)ⁿ⁻¹ p′(A)",
+      "adj(A) = p(A)·A",
+      "adj(A) = A·p(A)",
+      "adj(A) = A² − tr(A)A + det(A)I"
+    ],
+    "correct": 0,
+    "explanation": "A classical result shows adj(A) = (−1)^{n−1} p′(A), where p′ is the derivative of p."
+  },
+  {
+    "question": "Using Cayley–Hamilton, how do you compute Aⁿ for a diagonalizable A with eigen-decomposition A = P D P⁻¹?",
+    "options": [
+      "Aⁿ = P diag(λᵢⁿ) P⁻¹",
+      "Aⁿ = nA",
+      "Aⁿ = det(A) I",
+      "Aⁿ = 0"
+    ],
+    "correct": 0,
+    "explanation": "Diagonalizable A yields Aⁿ = P Dⁿ P⁻¹, where Dⁿ = diag(λᵢⁿ)."
+  },
+  {
+    "question": "What special form does the characteristic polynomial p(λ) of an n×n matrix always have?",
+    "options": [
+      "Monic of degree n",
+      "Monomial λⁿ only",
+      "Always irreducible",
+      "Constant term is zero"
+    ],
+    "correct": 0,
+    "explanation": "By definition, the char-poly is monic (leading coefficient 1) and degree n."
+  },
+  {
+    "question": "For a 3×3 matrix A with p(λ) = λ³ − c₁λ² + c₂λ − c₃, Cayley–Hamilton gives which identity?",
+    "options": [
+      "A³ − c₁A² + c₂A − c₃I = 0",
+      "A³ + c₁A² + c₂A + c₃I = 0",
+      "A² − c₁A + c₂I = 0",
+      "det(A) = c₃"
+    ],
+    "correct": 0,
+    "explanation": "Substitute A into its char-poly: A³ − c₁A² + c₂A − c₃I = 0."
+  },
+  {
+    "question": "What is the degree of the characteristic polynomial of an n×n matrix?",
+    "options": [
+      "n",
+      "n²",
+      "1",
+      "n−1"
+    ],
+    "correct": 0,
+    "explanation": "The characteristic polynomial of an n×n matrix always has degree n."
+  },
+  {
+    "question": "Which use case is NOT a typical application of the Cayley–Hamilton theorem?",
+    "options": [
+      "Computing Aᵏ for large k",
+      "Finding the minimal polynomial",
+      "Solving nonlinear systems",
+      "Expressing A⁻¹ in terms of lower powers"
+    ],
+    "correct": 2,
+    "explanation": "CH is used for matrix‐power reduction, minimal polynomials, and inverses—not for solving nonlinear equations directly."
+  },
+  {
+    "question": "Let A be 2×2 with tr(A)=5 and det(A)=6. Using Cayley–Hamilton, A² = 5A − 6I. Then A⁴ equals:",
+    "options": [
+      "65A − 114I",
+      "19A − 30I",
+      "5A − 6I",
+      "25A − 30I"
+    ],
+    "correct": 0,
+    "explanation": "Compute A³ = 19A − 30I and then A⁴ = A·A³ = 65A − 114I by repeated substitution."
+  },
+  {
+    "question": "Which technique leverages Cayley–Hamilton to reduce computation of the matrix exponential eᴬ?",
+    "options": [
+      "Polynomial interpolation on the spectrum",
+      "LU decomposition",
+      "Gram–Schmidt process",
+      "Gaussian elimination"
+    ],
+    "correct": 0,
+    "explanation": "One projects eᴬ onto the basis {I, A,…,Aⁿ⁻¹} by interpolating on eigenvalues, using CH to truncate higher powers."
+  },
+  {
+    "question": "For an n×n matrix A, the vector space spanned by {I, A, A², …} has dimension at most:",
+    "options": ["n", "n²", "2n", "n−1"],
+    "correct": 0,
+    "explanation": "Cayley–Hamilton implies that powers Aⁿ and higher are linear combinations of I…Aⁿ⁻¹, so the span has dimension ≤ n."
+  },
+  {
+    "question": "If the minimal polynomial of A has degree m, then {I, A, …, A^{m−1}} are linearly independent but A^m is a combination of lower powers. Which relation holds between m and n?",
+    "options": ["m ≤ n", "m = n²", "m ≥ 2n", "m = n+1"],
+    "correct": 0,
+    "explanation": "The minimal polynomial divides the characteristic polynomial of degree n, so its degree m satisfies m ≤ n."
+  },
+  {
+    "question": "According to Cayley–Hamilton, for any polynomial f(λ), f(A) = r(A) where r(λ) is the remainder of dividing f by p(λ)=det(λI−A). What is the maximum degree of r?",
+    "options": ["n−1", "n", "2n", "n+1"],
+    "correct": 0,
+    "explanation": "When dividing by a degree-n polynomial p, the remainder r has degree strictly less than n, i.e. ≤ n−1."
+  },
+  {
+    "question": "Let A be an invertible 3×3 matrix with characteristic polynomial λ³ + a₂λ² + a₁λ + a₀. Cayley–Hamilton lets you express A⁻¹ as:",
+    "options": [
+      "−1/a₀·(A² + a₂A + a₁I)",
+      "1/a₀·(A² + a₂A + a₁I)",
+      "−1/a₂·(A² + a₁A + a₀I)",
+      "1/a₁·(A + a₀I)"
+    ],
+    "correct": 0,
+    "explanation": "From A³ + a₂A² + a₁A + a₀I = 0, multiply by A⁻¹ and solve: A⁻¹ = −1/a₀ (A² + a₂A + a₁I)."
+  },
+  {
+    "question": "For the 4×4 companion matrix C of p(λ)=λ⁴−c₃λ³+c₂λ²−c₁λ+c₀, Cayley–Hamilton gives:",
+    "options": [
+      "C⁴−c₃C³+c₂C²−c₁C+c₀I=0",
+      "C⁴+c₃C³+c₂C²+c₁C+c₀I=0",
+      "C⁴−c₃C+c₂C²−c₁C³+c₀I=0",
+      "C⁴−c₀C³+c₁C²−c₂C+c₃I=0"
+    ],
+    "correct": 0,
+    "explanation": "By definition of its characteristic polynomial, plugging C into p yields p(C)=C⁴−c₃C³+…+c₀I=0."
+  },
+  {
+    "question": "Applying Cayley–Hamilton to the companion matrix yields which linear recurrence for {x_k}?",
+    "options": [
+      "x_{k+4}=c₃x_{k+3}−c₂x_{k+2}+c₁x_{k+1}−c₀x_k",
+      "x_{k+4}=−c₃x_{k+3}+c₂x_{k+2}−c₁x_{k+1}+c₀x_k",
+      "x_{k+4}=c₀x_{k+3}−c₁x_{k+2}+c₂x_{k+1}−c₃x_k",
+      "x_{k+4}=c₃x_{k}+c₂x_{k+1}+c₁x_{k+2}+c₀x_{k+3}"
+    ],
+    "correct": 0,
+    "explanation": "The companion matrix enforces the recurrence whose characteristic polynomial is λ⁴−c₃λ³+…+c₀."
+  },
+  {
+    "question": "If a 2×2 matrix A satisfies A²−pA+qI=0, Cayley–Hamilton implies the exponential e^{A} can always be written as:",
+    "options": ["αI+βA", "γI+δA+εA²", "θI only", "φA only"],
+    "correct": 0,
+    "explanation": "Since A² is reducible to I and A, any power series in A (including e^A) collapses to a linear combination of I and A."
+  },
+  {
+    "question": "Which statement is NOT implied by Cayley–Hamilton theorem?",
+    "options": [
+      "Every A satisfies p(A)=0 for its char-poly p",
+      "{I,A,…,A^{n−1}} spans all polynomials in A",
+      "A is guaranteed to be diagonalizable",
+      "Any power A^n is reducible to lower powers"
+    ],
+    "correct": 2,
+    "explanation": "Cayley–Hamilton gives an annihilating polynomial but does not ensure A has n independent eigenvectors for diagonalizability."
+  },
+  {
+    "question": "Which form must the characteristic polynomial of a nilpotent n×n matrix take?",
+    "options": ["λⁿ", "(λ−1)ⁿ", "λ^k for k<n", "constant"],
+    "correct": 0,
+    "explanation": "Nilpotent ⇒ all eigenvalues are 0, so its characteristic polynomial is λⁿ."
+  },
+  {
+    "question": "For a single Jordan block J of size m with eigenvalue λ₀, Cayley–Hamilton yields:",
+    "options": ["(J−λ₀I)ᵐ=0", "(J−λ₀I)^{m−1}=0", "Jᵐ=λ₀ᵐI", "J−λ₀I=0"],
+    "correct": 0,
+    "explanation": "The characteristic polynomial is (λ−λ₀)ᵐ, so substituting J gives (J−λ₀I)ᵐ=0."
+  },
+  {
+    "question": "Using Cayley–Hamilton one shows adj(A) is a polynomial in A of degree ≤n−1. Which formula holds if p(λ)=λⁿ+c_{n−1}λ^{n−1}+…+c₀?",
+    "options": [
+      "adj(A)= (−1)^{n−1}(A^{n−1}+c_{n−1}A^{n−2}+…+c₁I)",
+      "adj(A)=A^{n−1}",
+      "adj(A)=det(A)A^{-1}",
+      "adj(A)=A·det(A)"
+    ],
+    "correct": 0,
+    "explanation": "A classical result gives adj(A) = (−1)^{n−1}p′(A), which expands to the stated polynomial in A."
+  },
+  {
+    "question": "Cayley–Hamilton theorem remains valid over which algebraic structure?",
+    "options": ["Any commutative ring", "Only ℝ", "Only ℂ", "Only fields of char 0"],
+    "correct": 0,
+    "explanation": "The proof uses only ring axioms and determinants, so it holds for matrices over any commutative ring."
+  },
+  {
+    "question": "In the resolvent formula (λI−A)^{-1}=adj(λI−A)/det(λI−A), det(λI−A) equals:",
+    "options": ["The characteristic polynomial p(λ)", "The minimal polynomial", "trace(λI−A)", "rank(λI−A)"],
+    "correct": 0,
+    "explanation": "By definition, det(λI−A) is the characteristic polynomial p(λ)."
+  },
+  {
+    "question": "When solving X′=AX, the fundamental solution e^{At} can be expressed by Cayley–Hamilton as a polynomial in A of degree at most:",
+    "options": ["n−1", "n", "2n−1", "2n"],
+    "correct": 0,
+    "explanation": "Since higher powers A^n… can be reduced, e^{At}=∑₀^{n−1}c_k(t)A^k with degree ≤n−1."
+  },
+  {
+    "question": "Which trace identity follows directly from Cayley–Hamilton for k ≥ n?",
+    "options": [
+      "trace(A^k) is a linear combination of trace(A^0)…trace(A^{n−1})",
+      "trace(A^k)=0",
+      "trace(A^k)=det(A)",
+      "trace(A^k)=trace(A)"
+    ],
+    "correct": 0,
+    "explanation": "Since A^k reduces to lower powers, trace(A^k) reduces to a linear combination of trace of those lower powers."
   }
 ]

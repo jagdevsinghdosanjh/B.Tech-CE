@@ -1,14 +1,237 @@
 [
   {
-    "question": "Which is a polynomial?",
-    "options": ["x^2 + 3", "√x + 1", "1/x", "x⁻¹ + 2"],
+    "question": "Which of the following is a system of linear equations?",
+    "options": ["x + y = 2", "x² + y = 3", "√x + y = 1", "x/y = 4"],
     "correct": 0,
-    "explanation": "Only x² + 3 follows all rules of polynomials."
+    "explanation": "Only x + y = 2 is linear; others involve non-linear terms."
   },
   {
-    "question": "Degree of 2x⁴ - 7x² + 5 is?",
-    "options": ["2", "4", "1", "3"],
+    "question": "What is the solution of the system: x + y = 5 and x - y = 1?",
+    "options": ["x=2, y=3", "x=3, y=2", "x=1, y=4", "x=4, y=1"],
     "correct": 1,
-    "explanation": "The highest exponent is 4."
+    "explanation": "Solving the system gives x=3 and y=2."
+  },
+  {
+    "question": "Which method eliminates one variable by adding or subtracting equations?",
+    "options": ["Substitution", "Graphical", "Elimination", "Matrix"],
+    "correct": 2,
+    "explanation": "Elimination method adds or subtracts equations to eliminate a variable."
+  },
+  {
+    "question": "A system of equations has no solution when:",
+    "options": ["Lines intersect", "Lines are parallel", "Lines coincide", "Lines are perpendicular"],
+    "correct": 1,
+    "explanation": "Parallel lines never intersect, hence no solution."
+  },
+  {
+    "question": "How many solutions does a consistent and independent system have?",
+    "options": ["None", "One", "Infinite", "Two"],
+    "correct": 1,
+    "explanation": "A consistent and independent system has exactly one solution."
+  },
+  {
+    "question": "Which matrix method is used to solve a system of linear equations?",
+    "options": ["Determinant Method", "Cramer's Rule", "Integration", "Differentiation"],
+    "correct": 1,
+    "explanation": "Cramer's Rule uses determinants to solve linear systems."
+  },
+  {
+    "question": "What is the rank of a matrix?",
+    "options": ["Number of rows", "Number of columns", "Number of non-zero rows in echelon form", "Determinant value"],
+    "correct": 2,
+    "explanation": "Rank is the number of non-zero rows in row echelon form."
+  },
+  {
+    "question": "Which of the following systems is inconsistent?",
+    "options": [
+      "x + y = 2, 2x + 2y = 4",
+      "x + y = 2, x - y = 0",
+      "x + y = 2, x + y = 3",
+      "x - y = 1, y = x - 1"
+    ],
+    "correct": 2,
+    "explanation": "x + y = 2 and x + y = 3 contradict each other, hence inconsistent."
+  },
+  {
+    "question": "What does it mean if the determinant of the coefficient matrix is zero?",
+    "options": ["Unique solution", "No solution or infinite solutions", "Always inconsistent", "Always consistent"],
+    "correct": 1,
+    "explanation": "Zero determinant implies the system may be inconsistent or dependent."
+  },
+  {
+    "question": "Which of the following is a homogeneous system?",
+    "options": ["x + y = 0", "x + y = 1", "x - y = 2", "x + 2y = 3"],
+    "correct": 0,
+    "explanation": "A homogeneous system has all constant terms equal to zero."
+  },
+  {
+    "question": "What is the graphical representation of a system with infinite solutions?",
+    "options": ["Intersecting lines", "Parallel lines", "Same line", "No lines"],
+    "correct": 2,
+    "explanation": "Infinite solutions occur when both equations represent the same line."
+  },
+  {
+    "question": "Which of the following is not a method to solve linear systems?",
+    "options": ["Substitution", "Elimination", "Graphical", "Integration"],
+    "correct": 3,
+    "explanation": "Integration is not used to solve linear systems."
+  },
+  {
+    "question": "In matrix form, Ax = B, what does A represent?",
+    "options": ["Solution matrix", "Coefficient matrix", "Constant matrix", "Inverse matrix"],
+    "correct": 1,
+    "explanation": "A is the coefficient matrix containing the coefficients of variables."
+  },
+  {
+    "question": "Which condition ensures a unique solution in Cramer's Rule?",
+    "options": ["Determinant = 0", "Determinant ≠ 0", "Infinite solutions", "No solution"],
+    "correct": 1,
+    "explanation": "Cramer's Rule applies only when the determinant of the coefficient matrix is non-zero."
+  },
+  {
+    "question": "If a system has more equations than unknowns, it is called:",
+    "options": ["Underdetermined", "Overdetermined", "Consistent", "Homogeneous"],
+    "correct": 1,
+    "explanation": "An overdetermined system has more equations than variables."
+  },
+  {
+    "question": "If the system AX = B has a unique solution, what must be true about matrix A?",
+    "options": ["A is singular", "Det(A) = 0", "A is non-singular", "A is symmetric"],
+    "correct": 2,
+    "explanation": "A must be non-singular (Det(A) ≠ 0) for a unique solution."
+  },
+  {
+    "question": "Which of the following systems is dependent?",
+    "options": [
+      "x + y = 2, 2x + 2y = 4",
+      "x + y = 2, x - y = 0",
+      "x + y = 2, x + y = 3",
+      "x - y = 1, y = x + 1"
+    ],
+    "correct": 0,
+    "explanation": "The second equation is a multiple of the first, indicating dependency."
+  },
+  {
+    "question": "In Gaussian elimination, what is the goal of forward elimination?",
+    "options": [
+      "To find the inverse of the matrix",
+      "To reduce the matrix to row echelon form",
+      "To compute the determinant",
+      "To normalize the matrix"
+    ],
+    "correct": 1,
+    "explanation": "Forward elimination transforms the matrix into row echelon form."
+  },
+  {
+    "question": "Which of the following is true for an inconsistent system?",
+    "options": [
+      "It has a unique solution",
+      "It has infinite solutions",
+      "It has no solution",
+      "It is always homogeneous"
+    ],
+    "correct": 2,
+    "explanation": "An inconsistent system has no solution."
+  },
+  {
+    "question": "If a system has infinitely many solutions, what is the rank of the augmented matrix?",
+    "options": [
+      "Equal to number of unknowns",
+      "Less than rank of coefficient matrix",
+      "Equal to rank of coefficient matrix but less than number of unknowns",
+      "Greater than number of equations"
+    ],
+    "correct": 2,
+    "explanation": "Infinite solutions occur when ranks are equal but less than number of unknowns."
+  },
+  {
+    "question": "Which method transforms a matrix to reduced row echelon form?",
+    "options": ["LU Decomposition", "Cramer's Rule", "Gauss-Jordan Elimination", "Jacobi Method"],
+    "correct": 2,
+    "explanation": "Gauss-Jordan Elimination reduces a matrix to reduced row echelon form."
+  },
+  {
+    "question": "Which iterative method is used to solve large sparse systems?",
+    "options": ["Cramer's Rule", "Gauss Elimination", "Jacobi Method", "Matrix Inversion"],
+    "correct": 2,
+    "explanation": "Jacobi Method is suitable for large sparse systems."
+  },
+  {
+    "question": "What is the condition for a unique solution in a homogeneous system AX = 0?",
+    "options": [
+      "Det(A) = 0",
+      "Rank(A) < number of variables",
+      "Rank(A) = number of variables",
+      "A is symmetric"
+    ],
+    "correct": 2,
+    "explanation": "A homogeneous system has a unique solution only if rank(A) = number of variables."
+  },
+  {
+    "question": "Which of the following is not a valid elementary row operation?",
+    "options": [
+      "Swapping two rows",
+      "Multiplying a row by a non-zero scalar",
+      "Adding a multiple of one row to another",
+      "Multiplying a row by zero"
+    ],
+    "correct": 3,
+    "explanation": "Multiplying a row by zero destroys information and is not allowed."
+  },
+  {
+    "question": "If the coefficient matrix is 3x3 and rank is 2, what can be said about the system?",
+    "options": [
+      "Unique solution",
+      "No solution",
+      "Infinite solutions or no solution",
+      "Exactly two solutions"
+    ],
+    "correct": 2,
+    "explanation": "If rank < number of variables, the system may be inconsistent or have infinite solutions."
+  },
+  {
+    "question": "Which of the following is true for a consistent system with more unknowns than equations?",
+    "options": [
+      "It has a unique solution",
+      "It has no solution",
+      "It has infinite solutions",
+      "It is always inconsistent"
+    ],
+    "correct": 2,
+    "explanation": "Such systems are underdetermined and typically have infinite solutions."
+  },
+  {
+    "question": "What is the time complexity of solving a system using Gaussian elimination?",
+    "options": ["O(n)", "O(n²)", "O(n³)", "O(log n)"],
+    "correct": 2,
+    "explanation": "Gaussian elimination has a time complexity of O(n³)."
+  },
+  {
+    "question": "Which of the following systems is overdetermined?",
+    "options": [
+      "3 equations, 3 unknowns",
+      "2 equations, 3 unknowns",
+      "3 equations, 2 unknowns",
+      "2 equations, 2 unknowns"
+    ],
+    "correct": 2,
+    "explanation": "More equations than unknowns defines an overdetermined system."
+  },
+  {
+    "question": "Which matrix property ensures that LU decomposition is possible without pivoting?",
+    "options": ["Symmetry", "Diagonal dominance", "Singularity", "Orthogonality"],
+    "correct": 1,
+    "explanation": "Diagonal dominance ensures LU decomposition without pivoting."
+  },
+  {
+    "question": "Which of the following is a necessary condition for the Jacobi method to converge?",
+    "options": [
+      "Matrix is symmetric",
+      "Matrix is diagonally dominant",
+      "Matrix is singular",
+      "Matrix is sparse"
+    ],
+    "correct": 1,
+    "explanation": "Jacobi method converges if the matrix is diagonally dominant."
   }
 ]
