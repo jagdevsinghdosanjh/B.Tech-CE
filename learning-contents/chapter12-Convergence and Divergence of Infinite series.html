@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartSchoolAI – Chapter 12: Convergence & Divergence of Infinite Series</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header class="sticky-header">
+  <nav class="navbar">
+    <ul>
+      <li><a href="./chapter11-CayleyHamilton.html">← Chapter 11: Cayley–Hamilton Theorem</a></li>
+      <li><a href="./chapter13-GeometricSeriesTest.html">Chapter 13: Geometric Series Test →</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="chapter-container">
+  <aside class="sidebar">
+    <p>Progress Tracker</p>
+    <ul>
+      <li><a href="#definition">What Is an Infinite Series?</a></li>
+      <li><a href="#comparison">Convergence vs Divergence</a></li>
+      <li><a href="#tests">Tests for Convergence</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#practice">Practice</a></li>
+    </ul>
+  </aside>
+
+  <main class="chapter-content">
+    <h1 id="definition">📘 Chapter 12: Convergence & Divergence of Infinite Series</h1>
+
+    <h2>🔁 What Is an Infinite Series?</h2>
+    <p>An <strong>infinite series</strong> is the sum of the terms of an infinite sequence:</p>
+    <p>
+
+\[
+      \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \cdots
+\]
+
+</p>
+    <ul>
+      <li>If the sum approaches a finite value, the series <strong>converges</strong>.</li>
+      <li>If it grows without bound or oscillates, the series <strong>diverges</strong>.</li>
+    </ul>
+
+    <h2 id="comparison">✅ Convergence vs ❌ Divergence</h2>
+    <table>
+      <tr>
+        <th>Concept</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><strong>Convergent Series</strong></td>
+        <td>The partial sums approach a finite limit. Example: \( \sum \frac{1}{n^2} \)</td>
+      </tr>
+      <tr>
+        <td><strong>Divergent Series</strong></td>
+        <td>The partial sums do not approach a finite limit. Example: \( \sum \frac{1}{n} \)</td>
+      </tr>
+    </table>
+
+    <h2 id="tests">🔍 Tests for Convergence</h2>
+
+    <h3>1. Nth-Term Test for Divergence</h3>
+    <ul>
+      <li>If \( \lim_{n \to \infty} a_n \neq 0 \), the series diverges.</li>
+      <li>If \( \lim_{n \to \infty} a_n = 0 \), the test is inconclusive.</li>
+    </ul>
+
+    <h3>2. Geometric Series Test</h3>
+    <ul>
+      <li>Series of the form \( \sum ar^n \)</li>
+      <li>Converges if \( |r| < 1 \); diverges if \( |r| \geq 1 \)</li>
+    </ul>
+
+    <h3>3. p-Series Test</h3>
+    <ul>
+      <li>Series of the form \( \sum \frac{1}{n^p} \)</li>
+      <li>Converges if \( p > 1 \); diverges if \( p \leq 1 \)</li>
+    </ul>
+
+    <h3>4. Integral Test</h3>
+    <p>If \( f(n) = a_n \) is positive, continuous, and decreasing:</p>
+    <p>
+
+\[
+      \sum a_n \text{ and } \int f(x)\,dx \text{ both converge or both diverge}
+    \]
+
+</p>
+
+    <h3>5. Comparison Test</h3>
+    <ul>
+      <li>If \( 0 \leq a_n \leq b_n \) and \( \sum b_n \) converges, then \( \sum a_n \) converges.</li>
+      <li>If \( a_n \geq b_n \geq 0 \) and \( \sum b_n \) diverges, then \( \sum a_n \) diverges.</li>
+    </ul>
+
+    <h3>6. Limit Comparison Test</h3>
+    <p>If \( \lim_{n \to \infty} \frac{a_n}{b_n} = c \) where \( c > 0 \), then both series behave the same.</p>
+
+    <h3>7. Ratio Test</h3>
+    <p>Compute \( L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \)</p>
+    <ul>
+      <li>If \( L < 1 \), converges</li>
+      <li>If \( L > 1 \), diverges</li>
+      <li>If \( L = 1 \), inconclusive</li>
+    </ul>
+
+    <h3>8. Root Test</h3>
+    <p>Compute \( L = \lim_{n \to \infty} \sqrt[n]{|a_n|} \)</p>
+    <ul>
+      <li>Same conclusions as the Ratio Test</li>
+    </ul>
+
+    <h2 id="examples">📊 Examples</h2>
+    <div class="example">
+      <p><strong>Example 1:</strong> \( \sum \frac{1}{n^2} \)</p>
+      <p>This is a p-series with \( p = 2 > 1 \) → ✅ Converges</p>
+    </div>
+
+    <div class="example">
+      <p><strong>Example 2:</strong> \( \sum \frac{1}{n} \)</p>
+      <p>This is a p-series with \( p = 1 \) → ❌ Diverges (harmonic series)</p>
+    </div>
+
+    <h2 id="practice">📝 Practice</h2>
+    <p><strong>Q:</strong> Determine whether the series \( \sum \frac{n}{n^2 + 1} \) converges or diverges using the Limit Comparison Test.</p>
+
+    <hr />
+    <nav class="chapter-nav">
+      <a href="./chapter11-CayleyHamilton.html">← Back to Chapter 11: Cayley–Hamilton Theorem</a>
+      <a href="./chapter13-GeometricSeriesTest.html">Next: Chapter 13 – Geometric Series Test →</a>
+    </nav>
+  </main>
+</div>
+
+<script src="navbar.js"></script>
+</body>
+</html>
