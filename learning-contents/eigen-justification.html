@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eigenvalues and Roots</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    h1, h2 { color: #333366; }
+    .matrix, .vector { font-weight: bold; }
+    .box { background: #f0f8ff; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
+    table { border-collapse: collapse; width: 50%; margin-top: 10px; }
+    th, td { border: 1px solid #aaa; padding: 8px; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <h1>Eigenvalues and Eigenvectors</h1>
+
+  <div class="box">
+    <p>The characteristic polynomial is derived from:</p>
+    <p><strong>det(A - λI) = (4 − λ)(3 − λ) − 2 = λ² − 7λ + 10</strong></p>
+  </div>
+
+  <h2>🧮 Step 1: Solve for Eigenvalues</h2>
+  <p>We solve the quadratic equation:</p>
+  <p><strong>λ² − 7λ + 10 = 0</strong></p>
+  <p>Factoring gives:</p>
+  <p><strong>(λ − 5)(λ − 2) = 0</strong></p>
+  <p>So the eigenvalues are:</p>
+  <ul>
+    <li>λ₁ = 5</li>
+    <li>λ₂ = 2</li>
+  </ul>
+
+  <h2>🔍 Step 2: Solve for Eigenvectors</h2>
+  <p>Assume the matrix A is:</p>
+  <p class="matrix">A = [ 4  1 ]<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ 2  3 ]</p>
+
+  <h3>🧩 Eigenvector for λ = 5:</h3>
+  <p>A − 5I = [ −1  1 ]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ 2  −2 ]</p>
+  <p>Equation: [ −1  1 ] [ x ] = [ 0 ]<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ 2  −2 ] [ y ] &nbsp; [ 0 ]</p>
+  <p>From −x + y = 0 ⇒ y = x</p>
+  <p class="vector">Eigenvector: v₁ = [ 1, 1 ]</p>
+
+  <h3>🧩 Eigenvector for λ = 2:</h3>
+  <p>A − 2I = [ 2  1 ]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ 2  1 ]</p>
+  <p>Equation: [ 2  1 ] [ x ] = [ 0 ]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ 2  1 ] [ y ] &nbsp; [ 0 ]</p>
+  <p>From 2x + y = 0 ⇒ y = −2x</p>
+  <p class="vector">Eigenvector: v₂ = [ 1, −2 ]</p>
+
+  <h2>✅ Final Answers</h2>
+  <table>
+    <tr><th>Eigenvalue λ</th><th>Eigenvector v</th></tr>
+    <tr><td>5</td><td>[1, 1]</td></tr>
+    <tr><td>2</td><td>[1, −2]</td></tr>
+  </table>
+
+  <h2>Solving Roots of λ² − 7λ + 10 = 0</h2>
+
+  <h3>🧮 Using Factoring:</h3>
+  <p>(λ − 5)(λ − 2) = 0 ⇒ λ = 5 or λ = 2</p>
+
+  <h3>🔍 Using Discriminant Method:</h3>
+  <p>Discriminant D = b² − 4ac = (−7)² − 4(1)(10) = 49 − 40 = 9</p>
+  <p>Since D &gt; 0, the equation has two distinct real roots:</p>
+  <p><strong>λ = (7 ± √9)/2 ⇒ λ = (7 ± 3)/2</strong></p>
+  <ul>
+    <li>λ₁ = (7 + 3)/2 = 5</li>
+    <li>λ₂ = (7 − 3)/2 = 2</li>
+  </ul>
+
+</body>
+</html>
